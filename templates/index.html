@@ -1,0 +1,160 @@
+{% extends "base.html" %}
+{% load pages_tags mezzanine_tags i18n staticfiles %}
+{% load hometag %}
+
+{% block meta_title %}{% trans "Home" %}{% endblock %}
+{% block title %}{% trans "Home" %}{% endblock %}
+
+{% block breadcrumb_menu %}
+    <li class="active">{% trans "Home" %}</li>
+{% endblock %}
+
+
+{% compress css %}
+    {% block extra_css %}
+        <link rel="stylesheet" href="{% static "/assets/stylesheets/leaflet.css" %}">
+    {% endblock %}
+{% endcompress %}
+
+{% compress js %}
+
+    {% block extra_js %}
+        <script src="{% static "/assets/javascripts/leaflet.js" %}"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="{% static "/assets/javascripts/nepal.geojson" %}"></script>{% endblock %}
+{% endcompress %}
+{% block main %}
+    {% get_recentVisualization_tag as recentVisualizationlist %}
+    {% get_recentDataset_tag as recentDatasetList %}
+
+    {% get_aboutus_tag as aboutus %}
+
+    <style type="text/css">
+        #map {
+            height: 600px;
+            padding: 10px 10px;
+            margin-top: 40px;
+        }
+    </style>
+    <div class="jumbotron text-center" id="map">
+
+    </div>
+
+    <div class="container index-box ">
+    <div class="row district-label"><span id="district">TOTAL</span></div>
+        <div class=" row">
+            <div class="col-xs-3 info-box">
+                <h4 class="text-center">GAUPALIKA</h4>
+                <h2 class="text-center"><img src="{% static "img/GAUPALIKA.png" %}"><span id="gau"> 0</span></h2>
+
+            </div>
+            <div class="col-xs-3 info-box">
+                <h4 class="text-center">NAGARPALIKA</h4>
+                <h2 class="text-center"><img src="{% static "img/nagar.png" %}"><span id="nagar">0</span></h2>
+
+            </div>
+            <div class="col-xs-3 info-box">
+                <h4 class="text-center">UPAMAHANAGARPLIKA</h4>
+                <h2 class="text-center"><img src="{% static "img/upanagar.png" %}"><span id="upnagar">0</span></h2>
+
+            </div>
+            <div class="col-xs-3 info-box ">
+                <h4 class="text-center">MAHANAGARPALKIA</h4>
+                <h2 class="text-center"><img src="{% static "img/mahanagar.png" %}"><span id="mahanagar">0</span></h2>
+
+            </div>
+
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-xs-4 info-box">
+                <h4 class="text-center">REGISTRED POLITICAL PARTIES </h4>
+                <h2 class="text-center"><img src="{% static "img/political.png" %}"> <span id="rpp">0</span></h2>
+
+            </div>
+            <div class="col-xs-4 info-box">
+                <h4 class="text-center">TOTAL POPULATION</h4>
+                <h2 class="text-center"><img src="{% static "img/population.png" %}"><span id="tp">0</span></h2>
+
+            </div>
+            <div class="col-xs-4 info-box">
+                <h4 class="text-center">TOTAL REGITRED VOTERS</h4>
+                <h2 class="text-center"><img src="{% static "img/voters.png" %}"><span id="trv">0</span></h2>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <!--End Visualization-->
+
+    <!--Section About-Us-->
+
+    <div class="section-small ">
+        <div class=" text-center">
+            <h3>About Us</h3>
+            <p>{{ aboutus.Content |safe }}</p>
+            <a href="/about-us" class="btn-link">Know More</a>
+        </div>
+    </div>
+    <!--End About-Us-->
+
+
+    <!--Section Features -->
+    <div class="section-larger">
+
+        <div class="container">
+            <div class="col-lg-4  col-md-4 col-sm-4">
+                <div class="small-box">
+                    <div class="text">
+                        <h3>Recent Data</h3>
+
+                        {% for list in recentVisualizationlist %}
+                            <li><a href="{{ list.Dataset.url }}" download>{{ list.Data_Title }}<img src="{% static "img/csv.png" %}" height="20"></a>
+                            </li>
+                        {% endfor %}
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4  col-md-4 col-sm-4">
+                <div class="small-box">
+                    <div class="text">
+                        <h3>Recent Data</h3>
+
+                        {% for list in recentDatasetList %}
+                            <li><a href="/visualization">{{ list.Data_Title }}</a></li>
+                        {% endfor %}
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4  col-md-4 col-sm-4">
+                <div class="small-box">
+                    <div class="text">
+                        <h3>Recent Data</h3>
+                        <a class="twitter-timeline" href="https://twitter.com/hashtag/LocalElection"
+                           data-widget-id="845244643440676864">#LocalElection Tweets</a>
+                        <script>!function (d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                            if (!d.getElementById(id)) {
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src = p + "://platform.twitter.com/widgets.js";
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }
+                        }(document, "script", "twitter-wjs");</script>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--End Features-->
+
+{% endblock %}

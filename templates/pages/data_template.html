@@ -1,0 +1,51 @@
+{% extends "pages/page.html" %}
+{% load hometag %}
+{% load mezzanine_tags %}
+
+{% block main %}{{ block.super }}
+    {% get_datalist_tag as DatasetList %}
+    {% get_recentVisualization_tag as recentVisualizationlist %}
+    {% get_recentDataset_tag as recentDatasetList %}
+
+
+<div class="container section-page">
+<div class="col-md-9">
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Dataset Title</th>
+        <th>Download</th>
+        <th>Created Date</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for list in DatasetList %}
+      <tr>
+        <td><a href="">{{ list.Data_Title }}</a></td>
+        <td><a href="{{ list.Dataset.url  }}" class="btn btn-primary active" download>⇩</a></td>
+        <td>{{ list.added |date }}</td>
+      </tr>
+
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+  <div class="col-md-3 sidebar">
+            <h3>Recent Added Visulization</h3>
+            <hr>
+            {% for list in recentVisualizationlist %}
+                <li><a href="/visualization">{{ list.Data_Title }}</a></li>
+            {% endfor %}
+            <hr>
+            <hr>
+            <h3>Recent Added Data</h3>
+            <hr>
+            {% for list in recentDatasetList %}
+                <li><a href="{{ list.Dataset.url }}" download>{{ list.Data_Title }}</a></li>
+            {% endfor %}
+        </div>
+
+</div>
+
+{% endblock %}

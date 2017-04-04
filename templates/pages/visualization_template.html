@@ -1,0 +1,74 @@
+{% extends "pages/page.html" %}
+{% load hometag staticfiles %}
+{% load mezzanine_tags %}
+
+
+
+{% compress css %}
+    {% block extra_css %}
+        <link rel="stylesheet" href="{% static "/assets/stylesheets/lightbox.css" %}">
+    {% endblock %}
+{% endcompress %}
+
+
+{% compress js %}
+
+    {% block extra_js %}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="{% static "/assets/javascripts/lightbox.js" %}"></script>
+    {% endblock %}
+{% endcompress %}
+
+
+
+{% block main %}
+
+    {% get_Visualization_tag as visualizationlist %}
+    {% get_recentVisualization_tag as recentVisualizationlist %}
+    {% get_recentDataset_tag as recentDatasetList %}
+
+
+    <div class="container section-page">
+        <div class="col-md-9">
+            <div class="row">
+
+
+                {% for vlist in visualizationlist %}
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="{{ vlist.Inforgraphic.url }}" class="example-image-link"
+                               data-lightbox="example-set"
+                               data-title="<a href='{{ vlist.Inforgraphic.url }}' download>Download</a> "><img
+                                    id="myImg" src="{{ vlist.Inforgraphic.url }}" class="img-responsive"></a>
+                            <div class="caption">
+                                <p class="text-primary">{{ vlist.Data_Title }}</p><b>- {{ vlist.added|date }}</b>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+
+                {% endfor %}
+
+            </div>
+
+
+
+        </div>
+        <div class="col-md-3 sidebar">
+            <h3>Recent Added Visulization</h3>
+            <hr>
+            {% for list in recentVisualizationlist %}
+                <li><a href="/visualization">{{ list.Data_Title }}</a></li>
+            {% endfor %}
+            <hr>
+            <hr>
+            <h3>Recent Added Data</h3>
+            <hr>
+            {% for list in recentDatasetList %}
+                <li><a href="{{ list.Dataset.url }}" download>{{ list.Data_Title }}</a></li>
+            {% endfor %}
+        </div>
+
+    </div>
+
+{% endblock %}

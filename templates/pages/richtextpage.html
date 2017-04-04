@@ -1,0 +1,31 @@
+{% extends "pages/page.html" %}
+
+{% load mezzanine_tags hometag%}
+
+{% block main %}{{ block.super }}
+<div class="container section-page">
+    <div class="col-md-8">
+  {% get_recentVisualization_tag as recentVisualizationlist %}
+    {% get_recentDataset_tag as recentDatasetList %}
+{% editable page.richtextpage.content %}
+{{ page.richtextpage.content|richtext_filters|safe }}
+{% endeditable %}
+    </div>
+     <div class="col-md-3 sidebar">
+            <h3>Recent Added Visulization</h3>
+            <hr>
+            {% for list in recentVisualizationlist %}
+                <li><a href="/visualization">{{ list.Data_Title }}</a></li>
+            {% endfor %}
+            <hr>
+            <hr>
+            <h3>Recent Added Data</h3>
+            <hr>
+            {% for list in recentDatasetList %}
+                <li><a href="{{ list.Dataset.url }}" download>{{ list.Data_Title }}</a></li>
+            {% endfor %}
+        </div>
+
+</div>
+    </div>
+{% endblock %}
