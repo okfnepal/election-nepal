@@ -5,7 +5,7 @@
 In progress not completed. 
 
 # Contributing
- Election Nepal is an open source project. Repositories are hosted on  GitHub, so contributing is  easy. Anyone can get involve.
+ Election Nepal is an open source project. Repositories are hosted on  GitHub, so contributing is  easy and anyone can get involve.
  
   
 Code Behind http://electionnepal.org
