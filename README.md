@@ -4,6 +4,35 @@
 # Status
 In progress not completed. 
 
+# Local Development
+- Clone the repo
+```
+git clone https://github.com/okfnepal/election-nepal
+```
+
+- Create a virtualenv
+```
+virtualenv venv
+```
+- Activate the virtualenv
+```
+source venv/bin/activate
+```
+- Install the requirements using [pip](https://pip.pypa.io/en/stable/)
+```
+pip install -r requirements.txt
+```
+- Run migrations
+```
+python manage.py makemigrations
+python manage.py migrate
+```
+
+- Run the server
+```
+python manage.py runserver
+```
+
 # Contributing
  Election Nepal is an open source project. Repositories are hosted on  GitHub, so contributing is  easy and anyone can get involve.
  
