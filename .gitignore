@@ -1,3 +1,4 @@
+
 *.pyc
 *.pyo
 *.db
@@ -6,5 +7,7 @@
 local_settings.py
 migrations/
 .idea/*
+
 .idea/watcherTasks.xml
+
 .idea/vcs.xml
