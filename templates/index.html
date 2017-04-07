@@ -111,7 +111,7 @@
                     <div class="text">
                         <h3>Recent Data</h3>
 
-                        {% for list in recentVisualizationlist %}
+                        {% for list in  recentDatasetList%}
                             <li><a href="{{ list.Dataset.url }}" download>{{ list.Data_Title }}<img src="{% static "img/csv.png" %}" height="20"></a>
                             </li>
                         {% endfor %}
@@ -125,7 +125,7 @@
                     <div class="text">
                         <h3>Recent Data</h3>
 
-                        {% for list in recentDatasetList %}
+                        {% for list in recentVisualizationlist %}
                             <li><a href="/visualization">{{ list.Data_Title }}</a></li>
                         {% endfor %}
 

@@ -1,3 +1,4 @@
+
 *.pyc
 *.pyo
 *.db
@@ -5,4 +6,8 @@
 .coverage
 local_settings.py
 migrations/
+.idea/*
 
+.idea/watcherTasks.xml
+
+.idea/vcs.xml

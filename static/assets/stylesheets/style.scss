@@ -1,5 +1,6 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
 .navbar-brand {
   img {
     height: 70px;
@@ -22,22 +23,22 @@
   z-index: 1;
   font-family: "Arial Narrow";
 
-  h4{
+  h4 {
     font-weight: 600;
 
   }
 
-  h1{
+  h1 {
     margin-top: 4px;
     margin-bottom: 5px;
     font-weight: 700;
     float: left;
   }
-  span{
-    font-weight:600;
+  span {
+    font-weight: 600;
 
   }
-  hr{
+  hr {
     margin-top: 0px;
     margin-bottom: 0px;
     border: 0;
@@ -47,13 +48,13 @@
 
 }
 
-.info-box{
-  h2{
+.info-box {
+  h2 {
     margin-top: 18px;
     margin-bottom: 11px;
 
-    img{
-        height: 40px;
+    img {
+      height: 40px;
       padding-right: 25px;
       margin-top: -10px;
     }
@@ -71,17 +72,16 @@
     color: #f5f5f5;
   }
   p {
-    padding: 10px  25%  !important;
+    padding: 10px 25% !important;
   }
 
-
-  a.btn-link{
+  a.btn-link {
     background-color: #005d9b;
     color: #fff;
     padding: 8px 15px;
     border-radius: 34px;
 
-    &:hover{
+    &:hover {
 
       text-decoration: none;
       background-color: #646464;
@@ -122,54 +122,52 @@
     color: #444;
     h3 {
       color: #444;
-      border-bottom:  solid 3px #ff5252;
+      border-bottom: solid 3px #ff5252;
       padding: 5px;
       font-size: 18px;
       font-weight: 400;
       margin: 0 0 10px
     }
-    li  {
+    li {
       padding: 2px 10px 10px 9px;
       background-color: #fafafa;
       margin-bottom: 10px;
-      border-left:4px solid #0071bc;
-      list-style:none!important;
-      &:hover{
+      border-left: 4px solid #0071bc;
+      list-style: none !important;
+      &:hover {
 
       }
 
     }
 
-    li a img{
+    li a img {
       float: right;
 
     }
 
-
   }
 
-
 }
-.section-page{
+
+.section-page {
   margin-top: 140px;
 
 }
 
-
-
-.section-footer{
+.section-footer {
   color: #ffffff;
   min-height: 150px;
   padding: 30px 0;
   background-color: #646464;
 
 }
-.footer{
+
+.footer {
   color: #77f7f7;
-  h5{
+  h5 {
     font-weight: 600;
   }
-  p{
+  p {
     font-size: 12px;
     color: #f7f7f7;
     margin-top: 20px;
@@ -179,19 +177,18 @@
 
 }
 
-img.footer-logo{
+img.footer-logo {
   height: 80px;
 
-
 }
-.sidebar{
+
+.sidebar {
   margin-bottom: 80px;
 }
 
-
-.district-label{
+.district-label {
   margin-top: -30px;
-  span{
+  span {
     background: #ff5252;
     padding: 5px;
     font-size: 21px;
