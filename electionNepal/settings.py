@@ -67,9 +67,10 @@ FILE_UPLOAD_PERMISSIONS = 0o644
 # DATABASES #
 #############
 
+
 DATABASES = {
     "default": {
-        # Add "postgresql_psycopg2", "mysql", "sqlite3" or "oracle".
+        # Ends with "postgresql_psycopg2", "mysql", "sqlite3" or "oracle".
         "ENGINE": "django.db.backends.sqlite3",
         # DB name or path to database file if using sqlite3.
         "NAME": "dev.db",
@@ -83,6 +84,7 @@ DATABASES = {
         "PORT": "",
     }
 }
+
 
 
 #########
@@ -232,11 +234,17 @@ OPTIONAL_APPS = (
 # local_settings has full access to everything defined in this module.
 # Also force into sys.modules so it's visible to Django's autoreload.
 
-SECRET_KEY = "wocw3xqztl+f9aglq3hotc)^5od7)i==p4e8k3phldg=+sd=!0pg"
-NEVERCACHE_KEY = "v*!92i!f9p0lua64s1%oc@3yl3ip4b3t3&1d)3fn5jt_1fo_3q)*"
 
-DEBUG = True
 
+f = os.path.join(PROJECT_APP_PATH, "local_settings.py")
+if os.path.exists(f):
+    import sys
+    import imp
+    module_name = "%s.local_settings" % PROJECT_APP
+    module = imp.new_module(module_name)
+    module.__file__ = f
+    sys.modules[module_name] = module
+    exec(open(f, "rb").read())
 
 
 ####################
