@@ -236,6 +236,10 @@ OPTIONAL_APPS = (
 
 
 
+
+DEBUG = True
+localstatus=False
+
 f = os.path.join(PROJECT_APP_PATH, "local_settings.py")
 if os.path.exists(f):
     import sys
@@ -245,6 +249,12 @@ if os.path.exists(f):
     module.__file__ = f
     sys.modules[module_name] = module
     exec(open(f, "rb").read())
+    localstatus = True
+
+
+if not localstatus:
+    SECRET_KEY = "wocw3xqztl+f9aglqhorc)^&od7)i==p7eykphldg=+sd=!0pg"
+    NEVERCACHE_KEY = "v*!9ei!f9p0lur64s1%oc@$ylip4b3t31d)3fngjt_1fo_3q)*"
 
 
 ####################
