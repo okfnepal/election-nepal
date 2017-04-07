@@ -1,5 +1,7 @@
 # election-nepal
   Election Nepal is the project of  [Open Knowledge Nepal](https://np.okfn.org/). It  is a crowdsourced open portal that brings all kind of Data related to Nepal's Local Election together in Open and Visual Format. 
+
+Code Behind http://electionnepal.org
   
 # Status
 In progress not completed. 
@@ -41,10 +43,7 @@ deactivate
 ```
 
 # Contributing
- Election Nepal is an open source project. Repositories are hosted on  GitHub, so contributing is  easy and anyone can get involve.
- 
-  
-Code Behind http://electionnepal.org
+ Election Nepal is an open source project. Repositories are hosted on  GitHub, so contributing is  easy and anyone can get involved.
 
 # License
 
