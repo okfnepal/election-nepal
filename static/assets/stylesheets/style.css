@@ -5872,7 +5872,7 @@ button.close {
   background-color: #f6f6f6; }
 
 .small-box {
-  min-height: 300px;
+  min-height: 380px;
   border-width: 0 1px 1px 1px;
   border-style: solid;
   border-color: #f3f3f3;
@@ -5918,17 +5918,24 @@ button.close {
   background-color: #646464; }
 
 .footer {
-  color: #77f7f7; }
+  color: #f7f7f7; }
   .footer h5 {
-    font-weight: 600; }
+    font-weight: 600;
+    font-size: 14px; }
   .footer p {
     font-size: 12px;
     color: #f7f7f7;
-    margin-top: 20px;
     font-weight: 600; }
+  .footer p a {
+    color: #acb4f6 !important;
+    text-decoration: none; }
+  .footer svg {
+    fill: #f7f7f7; }
+  .footer .footer-license {
+    padding-top: 110px; }
 
 img.footer-logo {
-  height: 80px; }
+  height: 60px; }
 
 .sidebar {
   margin-bottom: 80px; }
@@ -5938,6 +5945,6 @@ img.footer-logo {
   .district-label span {
     background: #ff5252;
     padding: 5px;
-    font-size: 20px; }
+    font-size: 21px; }
 
 /*# sourceMappingURL=style.css.map */

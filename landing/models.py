@@ -18,7 +18,7 @@ class SiteInformation(models.Model):
         verbose_name_plural = 'Site Information'
 
 class AboutUs(models.Model):
-    Content=fields.RichTextField()
+    Content=fields.RichTextField(null=True, blank=True)
     def __str__(self):
         return "About Us"
 
@@ -28,41 +28,39 @@ class AboutUs(models.Model):
 
 
 class Data_template(Page):
-    content=fields.RichTextField()
+    pass
 
     def __str__(self):
         return  "Projects"
 
     class Meta:
         verbose_name = 'Data'
-        verbose_name_plural = 'Datas'
+        verbose_name_plural = 'Dataset'
 
 class Data(models.Model):
     Data_Title = models.CharField(max_length=100, null=False, blank=False)
-    Dataset=fields.FileField("Dataset")
     GitHub_Link = models.URLField()
     added = models.DateTimeField(auto_now_add=True)
-    updated = models.DateTimeField(auto_now=True)
     def __str__(self):
         return  self.Data_Title
 
 
 
 class  Visualization_template(Page):
-    content = fields.RichTextField()
+    pass
     def __str__(self):
         return  "Visualization"
 
     class Meta:
-        verbose_name = 'Visualization'
-        verbose_name_plural = 'Visualizations'
+        verbose_name = 'Visualizations'
+        verbose_name_plural = 'Visualization'
 
 class Visualization(models.Model):
     Data_Title = models.CharField(max_length=100, null=False, blank=False)
     Inforgraphic =fields.FileField("Viusalization Image",  format="Image")
-    GitHub_Link = models.URLField()
+    GitHub_Link = models.URLField(null=True, blank=True)
     added = models.DateTimeField(auto_now_add=True)
-    updated = models.DateTimeField(auto_now=True)
+    updated = models.DateTimeField(auto_now=True,)
 
     def __str__(self):
         return self.Data_Title
