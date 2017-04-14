@@ -22,7 +22,7 @@
     {% for list in DatasetList %}
       <tr>
         <td><a href="">{{ list.Data_Title }}</a></td>
-        <td><a href="{{ list.Dataset.url  }}" class="btn btn-primary active" download>⇩</a></td>
+        <td><a href="{{ list.GitHub_Link }}" class="btn btn-primary active" download>⇩</a></td>
         <td>{{ list.added |date }}</td>
       </tr>
 
@@ -42,7 +42,7 @@
             <h3>Recent Added Data</h3>
             <hr>
             {% for list in recentDatasetList %}
-                <li><a href="{{ list.Dataset.url }}" download>{{ list.Data_Title }}</a></li>
+                <li><a href="{{ list.GitHub_Link }}" download>{{ list.Data_Title }}</a></li>
             {% endfor %}
         </div>
 
