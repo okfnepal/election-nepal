@@ -96,11 +96,13 @@ function getUpdate(e) {
 
 
      (function () {
-        var map = L.map('map', {maxZoom:  6.9, minZoom:  6.9 }),
+        var map = L.map('map', {maxZoom:  7.9, minZoom:  6.9 }),
             topoLayer = new L.TopoJSON(),
             colorScale = chroma
                 .scale(['#D5E3FF', '#003171'])
                 .domain([0, 1]);
+                 map.dragging.disable();
+
         map.setView([28.1999999, 84.100140],  6.9);
 
         $.getJSON('static/assets/javascripts/nepal-districts.topo.json').done(addTopoData);
