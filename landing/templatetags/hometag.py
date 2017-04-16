@@ -1,7 +1,5 @@
 from django import template
-from landing.models import AboutUs,Data,Visualization
-from django.shortcuts import redirect
-from django.shortcuts import get_object_or_404
+from landing.models import AboutUs, Data, Visualization
 
 
 register = template.Library()
@@ -9,58 +7,25 @@ register = template.Library()
 
 @register.assignment_tag
 def get_aboutus_tag():
-    try:
-        aboutus=get_object_or_404(AboutUs,pk=1)
-
-    except:
-        aboutus='Some thing Error'
-
-
-    return aboutus
+    return AboutUs.objects.first()
 
 
 @register.assignment_tag
 def get_datalist_tag():
-    try:
-        Datalist=Data.objects.all()
-
-    except:
-        Datalist='Please Import Data'
-
-
-    return Datalist
+    return Data.objects.all()
 
 
 @register.assignment_tag
 def get_Visualization_tag():
-    try:
-        Visualizationlist=Visualization.objects.all()
-    except:
-        Visualizationlist='Please Import Visualization'
-
-
-    return Visualizationlist
-
+    return Visualization.objects.all()
 
 @register.assignment_tag
 def get_recentVisualization_tag():
-    try:
-        limit = 5
-        recentVisualizationlist=Visualization.objects.order_by('id')[:5][::-1]
-    except:
-        recentVisualizationlist='Please Import Visualization'
-
-
-    return recentVisualizationlist
+    limit = 5
+    return Visualization.objects.order_by('-id')[:limit]
 
 @register.assignment_tag
 def get_recentDataset_tag():
-    try:
-        limit = 5
-        recentDatasetList=Data.objects.order_by('id')[:5][::-1]
-    except:
-        recentDatasetList='Please Import Datasets'
-
-
-    return recentDatasetList
+    limit = 5
+    return Data.objects.order_by('-id')[:limit]
 
