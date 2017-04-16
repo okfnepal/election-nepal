@@ -27,5 +27,5 @@ def get_recentVisualization_tag():
 @register.assignment_tag
 def get_recentDataset_tag():
     limit = 5
-    return Data.objects.order_by('-id')[:5]
+    return Data.objects.order_by('-id')[:limit]
 
