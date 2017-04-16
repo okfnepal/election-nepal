@@ -19,11 +19,9 @@
 {% compress js %}
 
     {% block extra_js %}
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/chroma-js/0.5.9/chroma.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="http://d3js.org/topojson.v1.min.js"></script>
         <script src="{% static "/assets/javascripts/leaflet.js" %}"></script>
-    {% endblock %}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="{% static "/assets/javascripts/nepal.geojson" %}"></script>{% endblock %}
 {% endcompress %}
 {% block main %}
     {% get_recentVisualization_tag as recentVisualizationlist %}
