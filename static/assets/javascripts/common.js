@@ -101,7 +101,7 @@ function getUpdate(e) {
             colorScale = chroma
                 .scale(['#D5E3FF', '#003171'])
                 .domain([0, 1]);
-        map.setView([28.1999999, 85.300140],  6.9);
+        map.setView([28.1999999, 84.100140],  6.9);
 
         $.getJSON('static/assets/javascripts/nepal-districts.topo.json').done(addTopoData);
 
