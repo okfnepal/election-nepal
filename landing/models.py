@@ -14,12 +14,19 @@ class SiteInformation(models.Model):
     def __str__(self):
         return "Edit Here"
 
+    def __unicode__(self):
+        return "Edit Here"
+
     class Meta:
         verbose_name_plural = 'Site Information'
+
 
 class AboutUs(models.Model):
     Content=fields.RichTextField(null=True, blank=True)
     def __str__(self):
+        return "About Us"
+
+    def __unicode__(self):
         return "About Us"
 
     class Meta:
@@ -44,6 +51,9 @@ class Data(models.Model):
     def __str__(self):
         return  self.Data_Title
 
+    def __unicode__(self):
+        return self.Data_Title
+
 
 
 class  Visualization_template(Page):
@@ -51,9 +61,12 @@ class  Visualization_template(Page):
     def __str__(self):
         return  "Visualization"
 
+
+
     class Meta:
         verbose_name = 'Visualizations'
         verbose_name_plural = 'Visualization'
+        
 
 class Visualization(models.Model):
     Data_Title = models.CharField(max_length=100, null=False, blank=False)
@@ -62,7 +75,11 @@ class Visualization(models.Model):
     added = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True,)
 
+
     def __str__(self):
+        return self.Data_Title
+
+    def __unicode__(self):
         return self.Data_Title
 
 
