@@ -66,7 +66,7 @@ class  Visualization_template(Page):
     class Meta:
         verbose_name = 'Visualizations'
         verbose_name_plural = 'Visualization'
-        
+
 
 class Visualization(models.Model):
     Data_Title = models.CharField(max_length=100, null=False, blank=False)
