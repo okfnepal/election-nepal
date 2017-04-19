@@ -19,7 +19,7 @@
       </tr>
     </thead>
     <tbody>
-    {% for list in DatasetList %}
+    {% for list in DatasetList reversed %}
       <tr>
         <td><a href="">{{ list.Data_Title }}</a></td>
         <td><a href="{{ list.GitHub_Link }}" class="btn btn-primary active" download>⇩</a></td>
@@ -34,7 +34,7 @@
   <div class="col-md-3 sidebar">
             <h3>Recent Added Visulization</h3>
             <hr>
-            {% for list in recentVisualizationlist %}
+            {% for list in recentVisualizationlist  reversed %}
                 <li><a href="/visualization">{{ list.Data_Title }}</a></li>
             {% endfor %}
             <hr>

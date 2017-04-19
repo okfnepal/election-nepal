@@ -14,14 +14,14 @@
      <div class="col-md-3 sidebar">
             <h3>Recent Added Visulization</h3>
             <hr>
-            {% for list in recentVisualizationlist %}
+            {% for list in recentVisualizationlist reversed%}
                 <li><a href="/visualization">{{ list.Data_Title }}</a></li>
             {% endfor %}
             <hr>
             <hr>
             <h3>Recent Added Data</h3>
             <hr>
-            {% for list in recentDatasetList %}
+            {% for list in recentDatasetList reversed %}
                 <li><a href="{{ list.GitHub_Link }}" download>{{ list.Data_Title }}</a></li>
             {% endfor %}
         </div>
