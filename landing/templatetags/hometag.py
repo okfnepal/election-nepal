@@ -22,10 +22,10 @@ def get_Visualization_tag():
 @register.assignment_tag
 def get_recentVisualization_tag():
     limit = 5
-    return Visualization.objects.order_by('-id')[:limit]
+    return Visualization.objects.order_by('-added')[:limit]
 
 
 @register.assignment_tag
 def get_recentDataset_tag():
     limit = 5
-    return Data.objects.order_by('-id')[:limit]
+    return Data.objects.order_by('-added')[:limit]
