@@ -12,12 +12,12 @@ def get_aboutus_tag():
 
 @register.assignment_tag
 def get_datalist_tag():
-    return Data.objects.all()
+    return Data.objects.all().order_by('-id')
 
 
 @register.assignment_tag
 def get_Visualization_tag():
-    return Visualization.objects.all()
+    return Visualization.objects.all().order_by('-id')
 
 @register.assignment_tag
 def get_recentVisualization_tag():
