@@ -35,6 +35,11 @@ python manage.py migrate
 python manage.py runserver
 ```
 
+- Datbase fixture to load sample data 
+```
+python manage.py loaddata  election-nepal-fixture.json 
+```
+
 - In a web browser, go to [localhost:8000](http://localhost:8000/), and you should see the development site! Please note that the terminal window you are running the development site in must stay open while you are using the site.
 
 - When daily development is complete, terminate the local web server by typing ```CONTROL + C```. Also deactivate the virtual environment:
