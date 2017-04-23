@@ -1,0 +1,1825 @@
+[
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "redirects",
+      "model": "redirect"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "sites",
+      "model": "site"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "conf",
+      "model": "setting"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+      "app_label": "core",
+      "model": "sitepermission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+      "app_label": "generic",
+      "model": "assignedkeyword"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+      "app_label": "generic",
+      "model": "rating"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+      "app_label": "generic",
+      "model": "keyword"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+      "app_label": "generic",
+      "model": "threadedcomment"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+      "app_label": "pages",
+      "model": "page"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 15,
+    "fields": {
+      "app_label": "pages",
+      "model": "richtextpage"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 16,
+    "fields": {
+      "app_label": "pages",
+      "model": "link"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 17,
+    "fields": {
+      "app_label": "forms",
+      "model": "formentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 18,
+    "fields": {
+      "app_label": "forms",
+      "model": "fieldentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 19,
+    "fields": {
+      "app_label": "forms",
+      "model": "field"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 20,
+    "fields": {
+      "app_label": "forms",
+      "model": "form"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 21,
+    "fields": {
+      "app_label": "landing",
+      "model": "aboutus"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 22,
+    "fields": {
+      "app_label": "landing",
+      "model": "data"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 23,
+    "fields": {
+      "app_label": "landing",
+      "model": "siteinformation"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 24,
+    "fields": {
+      "app_label": "landing",
+      "model": "visualization"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 25,
+    "fields": {
+      "app_label": "landing",
+      "model": "visualization_template"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 26,
+    "fields": {
+      "app_label": "landing",
+      "model": "data_template"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 27,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 28,
+    "fields": {
+      "app_label": "django_comments",
+      "model": "commentflag"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 29,
+    "fields": {
+      "app_label": "django_comments",
+      "model": "comment"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "dm6thl0qugvpy5yfbdez3kqv4hr2070q",
+    "fields": {
+      "session_data": "M2FhMjlhMzg0NDUxYzU3ODU5MTQwNWUwMGY3YTY1MjZmMmY2NTMwYTp7Il9hdXRoX3VzZXJfaGFzaCI6ImUxODUwZmM4NTc1ODA3NDc5OWU3MTc0ZWRhYmE3YzQ0NjkxYjkzZWIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJtZXp6YW5pbmUuY29yZS5hdXRoX2JhY2tlbmRzLk1lenphbmluZUJhY2tlbmQiLCJfYXV0aF91c2VyX2lkIjoiMSJ9",
+      "expire_date": "2017-04-30T17:00:26.038Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "gy3ieaiig82owf84k4uqi7y3wpdk76bh",
+    "fields": {
+      "session_data": "M2FhMjlhMzg0NDUxYzU3ODU5MTQwNWUwMGY3YTY1MjZmMmY2NTMwYTp7Il9hdXRoX3VzZXJfaGFzaCI6ImUxODUwZmM4NTc1ODA3NDc5OWU3MTc0ZWRhYmE3YzQ0NjkxYjkzZWIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJtZXp6YW5pbmUuY29yZS5hdXRoX2JhY2tlbmRzLk1lenphbmluZUJhY2tlbmQiLCJfYXV0aF91c2VyX2lkIjoiMSJ9",
+      "expire_date": "2017-04-27T14:22:37.912Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "hr16qs696338054vi8ojro93sax21b21",
+    "fields": {
+      "session_data": "M2FhMjlhMzg0NDUxYzU3ODU5MTQwNWUwMGY3YTY1MjZmMmY2NTMwYTp7Il9hdXRoX3VzZXJfaGFzaCI6ImUxODUwZmM4NTc1ODA3NDc5OWU3MTc0ZWRhYmE3YzQ0NjkxYjkzZWIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJtZXp6YW5pbmUuY29yZS5hdXRoX2JhY2tlbmRzLk1lenphbmluZUJhY2tlbmQiLCJfYXV0aF91c2VyX2lkIjoiMSJ9",
+      "expire_date": "2017-04-22T03:57:57.858Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "jnp22pp5exyz5001fhfmbtq6bo18ga4j",
+    "fields": {
+      "session_data": "M2FhMjlhMzg0NDUxYzU3ODU5MTQwNWUwMGY3YTY1MjZmMmY2NTMwYTp7Il9hdXRoX3VzZXJfaGFzaCI6ImUxODUwZmM4NTc1ODA3NDc5OWU3MTc0ZWRhYmE3YzQ0NjkxYjkzZWIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJtZXp6YW5pbmUuY29yZS5hdXRoX2JhY2tlbmRzLk1lenphbmluZUJhY2tlbmQiLCJfYXV0aF91c2VyX2lkIjoiMSJ9",
+      "expire_date": "2017-04-23T15:52:15.497Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "nisrap5ftt88ezefiwo42u8xxsurh27x",
+    "fields": {
+      "session_data": "NmY2MGQxNmQ2NjI4ZGI2YTBjYTdlMjc5ZTViMjQ3NzhiMWI4Nzg3ZDp7Il9hdXRoX3VzZXJfaGFzaCI6IjM1ZjhjNTc3NDIzNjVmYWUyNjVlM2VhZjkwMDIyNmU0YjEwZTYzODEiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJtZXp6YW5pbmUuY29yZS5hdXRoX2JhY2tlbmRzLk1lenphbmluZUJhY2tlbmQiLCJfYXV0aF91c2VyX2lkIjoiMyJ9",
+      "expire_date": "2017-05-07T17:19:26.345Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "xpxiat2021dd03b8d8ziq5pwhzirh7i7",
+    "fields": {
+      "session_data": "M2FhMjlhMzg0NDUxYzU3ODU5MTQwNWUwMGY3YTY1MjZmMmY2NTMwYTp7Il9hdXRoX3VzZXJfaGFzaCI6ImUxODUwZmM4NTc1ODA3NDc5OWU3MTc0ZWRhYmE3YzQ0NjkxYjkzZWIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJtZXp6YW5pbmUuY29yZS5hdXRoX2JhY2tlbmRzLk1lenphbmluZUJhY2tlbmQiLCJfYXV0aF91c2VyX2lkIjoiMSJ9",
+      "expire_date": "2017-05-06T04:29:38.868Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "znqjxj3n8v2dshue7n1k6nem3doxu4jj",
+    "fields": {
+      "session_data": "M2FhMjlhMzg0NDUxYzU3ODU5MTQwNWUwMGY3YTY1MjZmMmY2NTMwYTp7Il9hdXRoX3VzZXJfaGFzaCI6ImUxODUwZmM4NTc1ODA3NDc5OWU3MTc0ZWRhYmE3YzQ0NjkxYjkzZWIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJtZXp6YW5pbmUuY29yZS5hdXRoX2JhY2tlbmRzLk1lenphbmluZUJhY2tlbmQiLCJfYXV0aF91c2VyX2lkIjoiMSJ9",
+      "expire_date": "2017-05-07T16:28:39.860Z"
+    }
+  },
+  {
+    "model": "sites.site",
+    "pk": 1,
+    "fields": {
+      "domain": "electionnepal.org",
+      "name": "electionnepal.org"
+    }
+  },
+  {
+    "model": "conf.setting",
+    "pk": 1,
+    "fields": {
+      "site": 1,
+      "name": "GOOGLE_ANALYTICS_ID",
+      "value": ""
+    }
+  },
+  {
+    "model": "conf.setting",
+    "pk": 2,
+    "fields": {
+      "site": 1,
+      "name": "COMMENTS_UNAPPROVED_VISIBLE",
+      "value": "True"
+    }
+  },
+  {
+    "model": "conf.setting",
+    "pk": 3,
+    "fields": {
+      "site": 1,
+      "name": "SITE_TITLE",
+      "value": "Election Nepal - Data Portal"
+    }
+  },
+  {
+    "model": "conf.setting",
+    "pk": 4,
+    "fields": {
+      "site": 1,
+      "name": "ADMIN_MENU_COLLAPSED",
+      "value": "False"
+    }
+  },
+  {
+    "model": "conf.setting",
+    "pk": 5,
+    "fields": {
+      "site": 1,
+      "name": "MAX_PAGING_LINKS",
+      "value": "10"
+    }
+  },
+  {
+    "model": "conf.setting",
+    "pk": 6,
+    "fields": {
+      "site": 1,
+      "name": "SEARCH_PER_PAGE",
+      "value": "10"
+    }
+  },
+  {
+    "model": "conf.setting",
+    "pk": 7,
+    "fields": {
+      "site": 1,
+      "name": "SITE_TAGLINE",
+      "value": "An open source content management platform."
+    }
+  },
+  {
+    "model": "conf.setting",
+    "pk": 8,
+    "fields": {
+      "site": 1,
+      "name": "COMMENTS_REMOVED_VISIBLE",
+      "value": "True"
+    }
+  },
+  {
+    "model": "conf.setting",
+    "pk": 9,
+    "fields": {
+      "site": 1,
+      "name": "COMMENTS_NUM_LATEST",
+      "value": "5"
+    }
+  },
+  {
+    "model": "conf.setting",
+    "pk": 10,
+    "fields": {
+      "site": 1,
+      "name": "BITLY_ACCESS_TOKEN",
+      "value": ""
+    }
+  },
+  {
+    "model": "conf.setting",
+    "pk": 11,
+    "fields": {
+      "site": 1,
+      "name": "TAG_CLOUD_SIZES",
+      "value": "4"
+    }
+  },
+  {
+    "model": "conf.setting",
+    "pk": 12,
+    "fields": {
+      "site": 1,
+      "name": "COMMENTS_DISQUS_SHORTNAME",
+      "value": ""
+    }
+  },
+  {
+    "model": "conf.setting",
+    "pk": 13,
+    "fields": {
+      "site": 1,
+      "name": "COMMENTS_NOTIFICATION_EMAILS",
+      "value": ""
+    }
+  },
+  {
+    "model": "conf.setting",
+    "pk": 14,
+    "fields": {
+      "site": 1,
+      "name": "COMMENTS_DISQUS_API_PUBLIC_KEY",
+      "value": ""
+    }
+  },
+  {
+    "model": "conf.setting",
+    "pk": 15,
+    "fields": {
+      "site": 1,
+      "name": "COMMENTS_DISQUS_API_SECRET_KEY",
+      "value": ""
+    }
+  },
+  {
+    "model": "conf.setting",
+    "pk": 16,
+    "fields": {
+      "site": 1,
+      "name": "COMMENTS_ACCOUNT_REQUIRED",
+      "value": "False"
+    }
+  },
+  {
+    "model": "conf.setting",
+    "pk": 17,
+    "fields": {
+      "site": 1,
+      "name": "AKISMET_API_KEY",
+      "value": ""
+    }
+  },
+  {
+    "model": "conf.setting",
+    "pk": 18,
+    "fields": {
+      "site": 1,
+      "name": "RICHTEXT_FILTER_LEVEL",
+      "value": "1"
+    }
+  },
+  {
+    "model": "conf.setting",
+    "pk": 19,
+    "fields": {
+      "site": 1,
+      "name": "RATINGS_ACCOUNT_REQUIRED",
+      "value": "False"
+    }
+  },
+  {
+    "model": "conf.setting",
+    "pk": 20,
+    "fields": {
+      "site": 1,
+      "name": "COMMENTS_DEFAULT_APPROVED",
+      "value": "True"
+    }
+  },
+  {
+    "model": "pages.page",
+    "pk": 1,
+    "fields": {
+      "keywords_string": "",
+      "site": 1,
+      "title": "Dataset",
+      "slug": "dataset",
+      "_meta_title": "",
+      "description": "Dataset",
+      "gen_description": true,
+      "created": "2017-04-08T03:59:23.599Z",
+      "updated": "2017-04-08T03:59:23.599Z",
+      "status": 2,
+      "publish_date": "2017-04-08T03:59:23.587Z",
+      "expiry_date": null,
+      "short_url": null,
+      "in_sitemap": true,
+      "_order": 0,
+      "content_model": "data_template",
+      "parent": null,
+      "in_menus": "1,2,3",
+      "titles": "Dataset",
+      "login_required": false
+    }
+  },
+  {
+    "model": "pages.page",
+    "pk": 2,
+    "fields": {
+      "keywords_string": "",
+      "site": 1,
+      "title": "Visualization",
+      "slug": "visualization",
+      "_meta_title": "",
+      "description": "Dataset / Visualization",
+      "gen_description": true,
+      "created": "2017-04-08T03:59:41.445Z",
+      "updated": "2017-04-08T03:59:47.040Z",
+      "status": 2,
+      "publish_date": "2017-04-08T03:59:41.434Z",
+      "expiry_date": null,
+      "short_url": null,
+      "in_sitemap": true,
+      "_order": 1,
+      "content_model": "visualization_template",
+      "parent": null,
+      "in_menus": "1,2,3",
+      "titles": "Visualization",
+      "login_required": false
+    }
+  },
+  {
+    "model": "pages.page",
+    "pk": 3,
+    "fields": {
+      "keywords_string": "",
+      "site": 1,
+      "title": "About Us",
+      "slug": "about-us",
+      "_meta_title": "",
+      "description": "Data related to Nepal's Local Election together in Open and Visual Format. Those accumulated data can be easily reused in future for various purposes. Portal will consist interactive visualization and infographics, which will help both national and international parties to get to know about the federal state division and the  status during local election. Volunteers and contributors of Election Nepal project will search, scrap, analyse and visualize various forms of data accumulated in the election which is due on 31st of Baisakh, 2073 (14th May, 2017).",
+      "gen_description": true,
+      "created": "2017-04-08T04:00:52.566Z",
+      "updated": "2017-04-08T04:00:52.566Z",
+      "status": 2,
+      "publish_date": "2017-04-08T04:00:52.536Z",
+      "expiry_date": null,
+      "short_url": null,
+      "in_sitemap": true,
+      "_order": 2,
+      "content_model": "richtextpage",
+      "parent": null,
+      "in_menus": "1,2,3",
+      "titles": "About Us",
+      "login_required": false
+    }
+  },
+  {
+    "model": "pages.page",
+    "pk": 5,
+    "fields": {
+      "keywords_string": "",
+      "site": 1,
+      "title": "Coverages",
+      "slug": "about-us/media-cover",
+      "_meta_title": "",
+      "description": "blank",
+      "gen_description": true,
+      "created": "2017-04-16T17:01:14.333Z",
+      "updated": "2017-04-18T01:07:10.491Z",
+      "status": 2,
+      "publish_date": "2017-04-16T17:01:14Z",
+      "expiry_date": null,
+      "short_url": null,
+      "in_sitemap": true,
+      "_order": 0,
+      "content_model": "richtextpage",
+      "parent": 3,
+      "in_menus": "1,2,3",
+      "titles": "About Us / Coverages",
+      "login_required": false
+    }
+  },
+  {
+    "model": "pages.richtextpage",
+    "pk": 3,
+    "fields": {
+      "content": "<p><span style=\"\">Data related to Nepal's Local Election together in Open and Visual Format. Those accumulated data can be easily reused in future for various purposes. Portal will consist interactive visualization and infographics, which will help both national and international parties to get to know about the federal state division and the  status during local election. Volunteers and contributors of Election Nepal project will search, scrap, analyse and visualize various forms of data accumulated in the election which is due on 31st of Baisakh, 2073 (14th May, 2017).</span></p>\n<p></p>\n<p><span style=\"\">The portal will work as mediator between citizens and Government of Nepal by visualizing provided data into interactive infographic. This will help citizens to understand federal and election data easily in visual format, the people with good programming skills can use our datasets and API to make something better and innovative tools or applications to increase citizens participation in the decision making. We believe that  the more citizens are engaged with election data, there will be more chances of electing right candidate. </span></p>\n<p></p>\n<h3>Aims</h3>\n<ul>\n<li style=\"\"><span style=\"\">To help national and international citizens understand how Local Election at Nepal is held by representing data in a simpler visual format in an understandable approach.</span></li>\n<li style=\"\"><span style=\"\">To help citizens of Nepal understand how current States (Pradesh) structure are divided and how many local bodies are there in their districts.</span></li>\n<li style=\"\"><span style=\"\">Bring the facts about Local election in-front of citizen and help them choose right leaders who can lead their community.</span></li>\n<li style=\"\"><span style=\"\">Analyze and Visualize different kinds of pre-Local Election Data and publish it into the different local newspaper to help citizens to understand what it really means.</span></li>\n<li style=\"\"><span style=\"\">Extract, Collect and Publish data related to Local Election in Open Format (CSV) which can be reusable and redeveloped in different ways.</span></li>\n<li style=\"\"><span style=\"\">Visualization with sharing and embedding features, Individuals or agencies can use in their platforms.</span></li>\n<li style=\"\"><span style=\"\">Give open access to project Application Program Interface (API) by publishing it on Github and let others to manipulate to get something useful.</span></li>\n<li style=\"\"><span style=\"\">To increase citizens’ participation in Local Election.</span></li>\n<li style=\"\"><span style=\"\">To track and make a public leader more Transparent and Accountable during the time of election and throughout the campaign.</span></li>\n<li style=\"\"><span style=\"\">Bring all kinds of data and facts related to Local Election under one domain for easy accessibility.</span></li>\n</ul>"
+    }
+  },
+  {
+    "model": "pages.richtextpage",
+    "pk": 5,
+    "fields": {
+      "content": "<p>blank</p>"
+    }
+  },
+  {
+    "model": "landing.siteinformation",
+    "pk": 1,
+    "fields": {
+      "Logo": "uploads/logo.png",
+      "Site_Title": "Election Nepal - Nepal Election Data Portal",
+      "Site_Meta_Key": "Election Nepal is a crowdsourced open portal that brings all kind of Data related to Nepal's Local Election together in Open and Visual Format.",
+      "Site_Meta_Description": "Election Nepal is a crowdsourced open portal that brings all kind of Data related to Nepal's Local Election together in Open and Visual Format.",
+      "Footer_Logo": "uploads/ok_lg_logo_nepal_white_rgb.png"
+    }
+  },
+  {
+    "model": "landing.aboutus",
+    "pk": 1,
+    "fields": {
+      "Content": "<p><span style=\"\">Election Nepal is a crowdsourced open portal that brings all kind of Data related to Nepal's Local Election together in Open and Visual Format. Those accumulated data can be easily reused in future for various purposes. Portal will consist interactive visualization and infographics, which will help both national and international parties to get to know about the federal state division and the  status during local election. </span></p>"
+    }
+  },
+  {
+    "model": "landing.data_template",
+    "pk": 1,
+    "fields": {}
+  },
+  {
+    "model": "landing.data",
+    "pk": 1,
+    "fields": {
+      "Data_Title": "Total number of registered political parties per districts",
+      "GitHub_Link": "https://github.com/okfnepal/election-nepal-data/raw/master/Total%20number%20of%20registered%20political%20parties%20per%20districts.csv",
+      "added": "2017-04-08T03:58:18.880Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 2,
+    "fields": {
+      "Data_Title": "Total number of population and registered voters per districts.",
+      "GitHub_Link": "https://github.com/okfnepal/election-nepal-data/raw/master/Total%20number%20of%20population%20and%20registered%20voters%20per%20districts.csv",
+      "added": "2017-04-08T04:01:57.595Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 3,
+    "fields": {
+      "Data_Title": "Total number of Local Bodies per districts",
+      "GitHub_Link": "https://github.com/okfnepal/election-nepal-data/raw/master/Total%20number%20of%20Local%20Bodies%20per%20districts.csv",
+      "added": "2017-04-08T04:02:18.248Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 4,
+    "fields": {
+      "Data_Title": "Total No of Samanpatik representation at CA",
+      "GitHub_Link": "https://github.com/okfnepal/election-nepal-data/raw/master/Total%20No%20of%20Samanpatik%20representation%20at%20CA.csv",
+      "added": "2017-04-08T04:02:34.975Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 5,
+    "fields": {
+      "Data_Title": "Political Parties Contact Information.",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Political%20Parties%20Contact%20Info.csv",
+      "added": "2017-04-08T04:02:54.712Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 6,
+    "fields": {
+      "Data_Title": "Name of registered political parties for Local Election",
+      "GitHub_Link": "https://github.com/okfnepal/election-nepal-data/blob/master/Name%20of%20registered%20political%20parties%20for%20Local%20Election.csv",
+      "added": "2017-04-08T04:03:12.036Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 17,
+    "fields": {
+      "Data_Title": "Election expenses limit in Rupees",
+      "GitHub_Link": "https://github.com/okfnepal/election-nepal-data/blob/master/Election%20expenses%20limit%20in%20Rupees.csv",
+      "added": "2017-04-16T15:11:58.519Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 18,
+    "fields": {
+      "Data_Title": "७५ जिल्लामा कायम मतदान स्थल/केन्द्र",
+      "GitHub_Link": "https://github.com/okfnepal/election-nepal-data/blob/master/७५%20जिल्लामा%20कायम%20मतदान%20स्थल_केन्द्र%20-%20Sheet%201.csv",
+      "added": "2017-04-19T14:09:31.105Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 19,
+    "fields": {
+      "Data_Title": "Total number of voters per districts",
+      "GitHub_Link": "https://github.com/okfnepal/election-nepal-data/blob/master/Total%20number%20of%20voters%20per%20districts.csv",
+      "added": "2017-04-20T03:38:38.023Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 20,
+    "fields": {
+      "Data_Title": "अर्जुनधारा नगरपालिका-झापा-प्रदेश नं_१",
+      "GitHub_Link": "https://github.com/okfnepal/election-nepal-data/blob/master/अर्जुनधारा%20नगरपालिका-झापा-प्रदेश%20नं_१.csv",
+      "added": "2017-04-21T01:41:17.106Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 21,
+    "fields": {
+      "Data_Title": "कचनकवल गाउँपालिका-झापा-प्रदेश नं_१",
+      "GitHub_Link": "https://github.com/okfnepal/election-nepal-data/blob/master/कचनकवल%20गाउँपालिका-झापा-प्रदेश%20नं_१.csv",
+      "added": "2017-04-21T01:41:39.630Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 22,
+    "fields": {
+      "Data_Title": "कन्काई नगरपालिका-झापा-प्रदेश नं_१",
+      "GitHub_Link": "https://github.com/okfnepal/election-nepal-data/blob/master/कन्काई%20नगरपालिका-झापा-प्रदेश%20नं_१.csv",
+      "added": "2017-04-21T01:42:07.620Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 23,
+    "fields": {
+      "Data_Title": "कमल गाउँपालिका-झापा-प्रदेश नं_१",
+      "GitHub_Link": "https://github.com/okfnepal/election-nepal-data/blob/master/कमल%20गाउँपालिका-झापा-प्रदेश%20नं_१.csv",
+      "added": "2017-04-21T01:42:50.628Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 24,
+    "fields": {
+      "Data_Title": "गौरादह नगरपालिका-झापा-प्रदेश नं_१",
+      "GitHub_Link": "https://github.com/okfnepal/election-nepal-data/blob/master/गौरादह%20नगरपालिका-झापा-प्रदेश%20नं_१.csv",
+      "added": "2017-04-21T01:43:13.146Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 25,
+    "fields": {
+      "Data_Title": "गौरिगंज गाउँपालिका-झापा-प्रदेश नं_१",
+      "GitHub_Link": "https://github.com/okfnepal/election-nepal-data/blob/master/गौरिगंज%20गाउँपालिका-झापा-प्रदेश%20नं_१.csv",
+      "added": "2017-04-21T01:43:35.175Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 26,
+    "fields": {
+      "Data_Title": "झापा गाउँपालिका-झापा-प्रदेश नं_१",
+      "GitHub_Link": "https://github.com/okfnepal/election-nepal-data/blob/master/झापा%20गाउँपालिका-झापा-प्रदेश%20नं_१.csv",
+      "added": "2017-04-21T01:43:55.814Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 27,
+    "fields": {
+      "Data_Title": "दमक नगरपालिका-झापा-प्रदेश नं_१",
+      "GitHub_Link": "https://github.com/okfnepal/election-nepal-data/blob/master/दमक%20नगरपालिका-झापा-प्रदेश%20नं_१.csv",
+      "added": "2017-04-21T01:44:26.848Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 28,
+    "fields": {
+      "Data_Title": "बाह्रदशी गाउँपालिका-झापा-प्रदेश नं_१",
+      "GitHub_Link": "https://github.com/okfnepal/election-nepal-data/blob/master/बाह्रदशी%20गाउँपालिका-झापा-प्रदेश%20नं_१.csv",
+      "added": "2017-04-21T01:44:53.999Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 29,
+    "fields": {
+      "Data_Title": "शिवसताक्षि नगरपालिका-झापा-प्रदेश नं_१",
+      "GitHub_Link": "https://github.com/okfnepal/election-nepal-data/blob/master/शिवसताक्षि%20नगरपालिका-झापा-प्रदेश%20नं_१.csv",
+      "added": "2017-04-21T01:45:29.878Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 30,
+    "fields": {
+      "Data_Title": "बुद्धशान्ति गाउँपालिका-झापा-प्रदेश नं_१",
+      "GitHub_Link": "https://github.com/okfnepal/election-nepal-data/blob/master/बुद्धशान्ति%20गाउँपालिका-झापा-प्रदेश%20नं_१.csv",
+      "added": "2017-04-21T01:45:30.962Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 31,
+    "fields": {
+      "Data_Title": "हल्दीवारी गाउँपालिका-झापा-प्रदेश नं_१",
+      "GitHub_Link": "https://github.com/okfnepal/election-nepal-data/blob/master/हल्दीवारी%20गाउँपालिका-झापा-प्रदेश%20नं_१.csv",
+      "added": "2017-04-21T01:45:59.156Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 32,
+    "fields": {
+      "Data_Title": "भद्रपुर नगरपालिका-झापा-प्रदेश नं_१",
+      "GitHub_Link": "https://github.com/okfnepal/election-nepal-data/blob/master/भद्रपुर%20नगरपालिका-झापा-प्रदेश%20नं_१.csv",
+      "added": "2017-04-21T01:45:59.991Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 33,
+    "fields": {
+      "Data_Title": "विर्तामोड नगरपालिका-झापा-प्रदेश नं_१",
+      "GitHub_Link": "https://github.com/okfnepal/election-nepal-data/blob/master/विर्तामोड%20नगरपालिका-झापा-प्रदेश%20नं_१.csv",
+      "added": "2017-04-21T01:46:47.598Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 38,
+    "fields": {
+      "Data_Title": "नयाँ स्थानीय संघीय संरचना र वार्ड विभाजन, प्रदेश नं_१",
+      "GitHub_Link": "https://github.com/okfnepal/election-nepal-data/blob/master/नयाँ%20स्थानीय%20संघीय%20संरचना%20र%20वार्ड%20विभाजन/नयाँ%20स्थानीय%20संघीय%20संरचना%20र%20वार्ड%20विभाजन%2C%20प्रदेश%20नं_१.csv",
+      "added": "2017-04-23T13:13:40.424Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 39,
+    "fields": {
+      "Data_Title": "नयाँ स्थानीय संघीय संरचना र वार्ड विभाजन, प्रदेश नं_२",
+      "GitHub_Link": "https://github.com/okfnepal/election-nepal-data/blob/master/नयाँ%20स्थानीय%20संघीय%20संरचना%20र%20वार्ड%20विभाजन/नयाँ%20स्थानीय%20संघीय%20संरचना%20र%20वार्ड%20विभाजन%2C%20प्रदेश%20नं_२.csv",
+      "added": "2017-04-23T13:14:02.042Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 40,
+    "fields": {
+      "Data_Title": "नयाँ स्थानीय संघीय संरचना र वार्ड विभाजन, प्रदेश नं_३",
+      "GitHub_Link": "https://github.com/okfnepal/election-nepal-data/blob/master/नयाँ%20स्थानीय%20संघीय%20संरचना%20र%20वार्ड%20विभाजन/नयाँ%20स्थानीय%20संघीय%20संरचना%20र%20वार्ड%20विभाजन%2C%20प्रदेश%20नं_३.csv",
+      "added": "2017-04-23T13:14:49.215Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 41,
+    "fields": {
+      "Data_Title": "नयाँ स्थानीय संघीय संरचना र वार्ड विभाजन, प्रदेश नं_४",
+      "GitHub_Link": "https://github.com/okfnepal/election-nepal-data/blob/master/नयाँ%20स्थानीय%20संघीय%20संरचना%20र%20वार्ड%20विभाजन/नयाँ%20स्थानीय%20संघीय%20संरचना%20र%20वार्ड%20विभाजन%2C%20प्रदेश%20नं_४.csv",
+      "added": "2017-04-23T13:15:23.435Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 42,
+    "fields": {
+      "Data_Title": "नयाँ स्थानीय संघीय संरचना र वार्ड विभाजन, प्रदेश नं_५",
+      "GitHub_Link": "https://github.com/okfnepal/election-nepal-data/blob/master/नयाँ%20स्थानीय%20संघीय%20संरचना%20र%20वार्ड%20विभाजन/नयाँ%20स्थानीय%20संघीय%20संरचना%20र%20वार्ड%20विभाजन%2C%20प्रदेश%20नं_५.csv",
+      "added": "2017-04-23T13:16:06.050Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 43,
+    "fields": {
+      "Data_Title": "नयाँ स्थानीय संघीय संरचना र वार्ड विभाजन, प्रदेश नं_६",
+      "GitHub_Link": "https://github.com/okfnepal/election-nepal-data/blob/master/नयाँ%20स्थानीय%20संघीय%20संरचना%20र%20वार्ड%20विभाजन/नयाँ%20स्थानीय%20संघीय%20संरचना%20र%20वार्ड%20विभाजन%2C%20प्रदेश%20नं_६.csv",
+      "added": "2017-04-23T13:16:59.764Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 44,
+    "fields": {
+      "Data_Title": "नयाँ स्थानीय संघीय संरचना र वार्ड विभाजन, प्रदेश नं_७",
+      "GitHub_Link": "https://github.com/okfnepal/election-nepal-data/blob/master/नयाँ%20स्थानीय%20संघीय%20संरचना%20र%20वार्ड%20विभाजन/नयाँ%20स्थानीय%20संघीय%20संरचना%20र%20वार्ड%20विभाजन%2C%20प्रदेश%20नं_७.csv",
+      "added": "2017-04-23T13:17:30.239Z"
+    }
+  },
+  {
+    "model": "landing.visualization_template",
+    "pk": 2,
+    "fields": {}
+  },
+  {
+    "model": "landing.visualization",
+    "pk": 10,
+    "fields": {
+      "Data_Title": "निवाचन आचारसंहिता",
+      "Inforgraphic": "uploads/Visualization/c9iindjuiaawm8f.jpg",
+      "GitHub_Link": "",
+      "added": "2017-04-17T03:47:14.440Z",
+      "updated": "2017-04-17T03:47:14.440Z"
+    }
+  },
+  {
+    "model": "landing.visualization",
+    "pk": 11,
+    "fields": {
+      "Data_Title": "मतपत्रमा छाप लगाउने सहि तरिका",
+      "Inforgraphic": "uploads/Visualization/c9ii58vvoaactbg_1024.jpg",
+      "GitHub_Link": "",
+      "added": "2017-04-17T03:50:43.660Z",
+      "updated": "2017-04-17T09:01:09.117Z"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 1,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 1,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 1,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 2,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 2,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 2,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 4,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 4,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 4,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add redirect",
+      "content_type": 5,
+      "codename": "add_redirect"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change redirect",
+      "content_type": 5,
+      "codename": "change_redirect"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete redirect",
+      "content_type": 5,
+      "codename": "delete_redirect"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can add site",
+      "content_type": 7,
+      "codename": "add_site"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can change site",
+      "content_type": 7,
+      "codename": "change_site"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can delete site",
+      "content_type": 7,
+      "codename": "delete_site"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can add Setting",
+      "content_type": 8,
+      "codename": "add_setting"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can change Setting",
+      "content_type": 8,
+      "codename": "change_setting"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can delete Setting",
+      "content_type": 8,
+      "codename": "delete_setting"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add Site permission",
+      "content_type": 9,
+      "codename": "add_sitepermission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change Site permission",
+      "content_type": 9,
+      "codename": "change_sitepermission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete Site permission",
+      "content_type": 9,
+      "codename": "delete_sitepermission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can add assigned keyword",
+      "content_type": 10,
+      "codename": "add_assignedkeyword"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can change assigned keyword",
+      "content_type": 10,
+      "codename": "change_assignedkeyword"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can delete assigned keyword",
+      "content_type": 10,
+      "codename": "delete_assignedkeyword"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can add Rating",
+      "content_type": 11,
+      "codename": "add_rating"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can change Rating",
+      "content_type": 11,
+      "codename": "change_rating"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can delete Rating",
+      "content_type": 11,
+      "codename": "delete_rating"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can add Keyword",
+      "content_type": 12,
+      "codename": "add_keyword"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can change Keyword",
+      "content_type": 12,
+      "codename": "change_keyword"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can delete Keyword",
+      "content_type": 12,
+      "codename": "delete_keyword"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add Comment",
+      "content_type": 13,
+      "codename": "add_threadedcomment"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change Comment",
+      "content_type": 13,
+      "codename": "change_threadedcomment"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete Comment",
+      "content_type": 13,
+      "codename": "delete_threadedcomment"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can add Page",
+      "content_type": 14,
+      "codename": "add_page"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+      "name": "Can change Page",
+      "content_type": 14,
+      "codename": "change_page"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+      "name": "Can delete Page",
+      "content_type": 14,
+      "codename": "delete_page"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+      "name": "Can add Rich text page",
+      "content_type": 15,
+      "codename": "add_richtextpage"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+      "name": "Can change Rich text page",
+      "content_type": 15,
+      "codename": "change_richtextpage"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+      "name": "Can delete Rich text page",
+      "content_type": 15,
+      "codename": "delete_richtextpage"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+      "name": "Can add Link",
+      "content_type": 16,
+      "codename": "add_link"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+      "name": "Can change Link",
+      "content_type": 16,
+      "codename": "change_link"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+      "name": "Can delete Link",
+      "content_type": 16,
+      "codename": "delete_link"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+      "name": "Can add Form entry",
+      "content_type": 17,
+      "codename": "add_formentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+      "name": "Can change Form entry",
+      "content_type": 17,
+      "codename": "change_formentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+      "name": "Can delete Form entry",
+      "content_type": 17,
+      "codename": "delete_formentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+      "name": "Can add Form field entry",
+      "content_type": 18,
+      "codename": "add_fieldentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+      "name": "Can change Form field entry",
+      "content_type": 18,
+      "codename": "change_fieldentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+      "name": "Can delete Form field entry",
+      "content_type": 18,
+      "codename": "delete_fieldentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+      "name": "Can add Field",
+      "content_type": 19,
+      "codename": "add_field"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+      "name": "Can change Field",
+      "content_type": 19,
+      "codename": "change_field"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 57,
+    "fields": {
+      "name": "Can delete Field",
+      "content_type": 19,
+      "codename": "delete_field"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 58,
+    "fields": {
+      "name": "Can add Form",
+      "content_type": 20,
+      "codename": "add_form"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 59,
+    "fields": {
+      "name": "Can change Form",
+      "content_type": 20,
+      "codename": "change_form"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 60,
+    "fields": {
+      "name": "Can delete Form",
+      "content_type": 20,
+      "codename": "delete_form"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 61,
+    "fields": {
+      "name": "Can add about us",
+      "content_type": 21,
+      "codename": "add_aboutus"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 62,
+    "fields": {
+      "name": "Can change about us",
+      "content_type": 21,
+      "codename": "change_aboutus"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 63,
+    "fields": {
+      "name": "Can delete about us",
+      "content_type": 21,
+      "codename": "delete_aboutus"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 64,
+    "fields": {
+      "name": "Can add data",
+      "content_type": 22,
+      "codename": "add_data"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 65,
+    "fields": {
+      "name": "Can change data",
+      "content_type": 22,
+      "codename": "change_data"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 66,
+    "fields": {
+      "name": "Can delete data",
+      "content_type": 22,
+      "codename": "delete_data"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 67,
+    "fields": {
+      "name": "Can add site information",
+      "content_type": 23,
+      "codename": "add_siteinformation"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 68,
+    "fields": {
+      "name": "Can change site information",
+      "content_type": 23,
+      "codename": "change_siteinformation"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 69,
+    "fields": {
+      "name": "Can delete site information",
+      "content_type": 23,
+      "codename": "delete_siteinformation"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 70,
+    "fields": {
+      "name": "Can add visualization",
+      "content_type": 24,
+      "codename": "add_visualization"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 71,
+    "fields": {
+      "name": "Can change visualization",
+      "content_type": 24,
+      "codename": "change_visualization"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 72,
+    "fields": {
+      "name": "Can delete visualization",
+      "content_type": 24,
+      "codename": "delete_visualization"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 73,
+    "fields": {
+      "name": "Can add Visualizations",
+      "content_type": 25,
+      "codename": "add_visualization_template"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 74,
+    "fields": {
+      "name": "Can change Visualizations",
+      "content_type": 25,
+      "codename": "change_visualization_template"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 75,
+    "fields": {
+      "name": "Can delete Visualizations",
+      "content_type": 25,
+      "codename": "delete_visualization_template"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 76,
+    "fields": {
+      "name": "Can add Data",
+      "content_type": 26,
+      "codename": "add_data_template"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 77,
+    "fields": {
+      "name": "Can change Data",
+      "content_type": 26,
+      "codename": "change_data_template"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 78,
+    "fields": {
+      "name": "Can delete Data",
+      "content_type": 26,
+      "codename": "delete_data_template"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 79,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 27,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 80,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 27,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 81,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 27,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 82,
+    "fields": {
+      "name": "Can add comment flag",
+      "content_type": 28,
+      "codename": "add_commentflag"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 83,
+    "fields": {
+      "name": "Can change comment flag",
+      "content_type": 28,
+      "codename": "change_commentflag"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 84,
+    "fields": {
+      "name": "Can delete comment flag",
+      "content_type": 28,
+      "codename": "delete_commentflag"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 85,
+    "fields": {
+      "name": "Can add comment",
+      "content_type": 29,
+      "codename": "add_comment"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 86,
+    "fields": {
+      "name": "Can change comment",
+      "content_type": 29,
+      "codename": "change_comment"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 87,
+    "fields": {
+      "name": "Can delete comment",
+      "content_type": 29,
+      "codename": "delete_comment"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 88,
+    "fields": {
+      "name": "Can moderate comments",
+      "content_type": 29,
+      "codename": "can_moderate"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$30000$OWoDLh7xRBMu$FCFnrgw5AuE4wXs0dxgXeh9IcRyfwZM2L6LPTdttzzk=",
+      "last_login": "2017-04-23T17:19:26.147Z",
+      "is_superuser": false,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2017-04-23T17:17:31Z",
+      "groups": [],
+      "user_permissions": [
+        79,
+        80,
+        81,
+        7,
+        8,
+        9,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        22,
+        23,
+        24,
+        10,
+        11,
+        12,
+        25,
+        26,
+        27,
+        85,
+        88,
+        86,
+        87,
+        82,
+        83,
+        84,
+        55,
+        56,
+        57,
+        52,
+        53,
+        54,
+        58,
+        59,
+        60,
+        49,
+        50,
+        51,
+        28,
+        29,
+        30,
+        34,
+        35,
+        36,
+        31,
+        32,
+        33,
+        37,
+        38,
+        39,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        76,
+        77,
+        78,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        46,
+        47,
+        48,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    }
+  },
+  {
+    "model": "core.sitepermission",
+    "pk": 2,
+    "fields": {
+      "user": 3,
+      "sites": [
+        1
+      ]
+    }
+  }
+]
