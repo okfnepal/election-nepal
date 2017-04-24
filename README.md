@@ -35,7 +35,7 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-- Datbase fixture to load sample data 
+- Database fixture to load sample data 
 ```
 python manage.py loaddata  election-nepal-fixture.json 
 ```
