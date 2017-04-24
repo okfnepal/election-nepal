@@ -1,0 +1,73 @@
+{% extends "pages/page.html" %}
+{% load staticfiles %}
+{% load mezzanine_tags hometag %}
+{% block extra_css %}
+    <link href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css" rel="stylesheet">
+{% endblock %}
+{% compress js %}
+
+    {% block extra_js %}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="{% static "/assets/javascripts/lightbox.js" %}"></script>
+    {% endblock %}
+{% endcompress %}
+
+{% block main %}{{ block.super }}
+    {% get_recentVisualization_tag as recentVisualizationlist %}
+    {% get_recentDataset_tag as recentDatasetList %}
+    <div class="container section-page">
+        <div class="col-md-9">
+            <h3>{{ dataset_id.Data_Title }}</h3>
+            <hr>
+            <div id='table-container'></div>
+
+        </div>
+        <div class="col-md-3 sidebar">
+            <h3>Recent Added Visulization</h3>
+            <hr>
+            {% for list in recentVisualizationlist reversed %}
+                <li><a href="/visualization">{{ list.Data_Title }}</a></li>
+            {% endfor %}
+            <hr>
+            <hr>
+            <h3>Recent Added Data</h3>
+            <hr>
+            {% for list in recentDatasetList reversed %}
+                <li><a href="{{ list.GitHub_Link }}" download>{{ list.Data_Title }}</a></li>
+            {% endfor %}
+        </div>
+
+    </div>
+    </div>
+{% endblock %}
+
+{% block footer_js %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static "/assets/javascripts/csv_to_html_table.js" %}"></script>
+
+    <script type="text/javascript">
+        function format_link(link) {
+            if (link)
+                return "<a href='" + link + "' target='_blank'>" + link + "</a>";
+            else
+                return "";
+        }
+        CsvToHtmlTable.init({
+            csv_path: '{{ dataset_id.GitHub_Link }}',
+            element: 'table-container',
+            allow_download: true,
+            csv_options: {separator: ',', delimiter: '"'},
+            datatables_options: {"paging": true},
+            custom_formatting: [[4, format_link]]
+        });
+        $(document).ready(function () {
+            $('#table-container-table_wrapper').DataTable();
+
+        });
+
+    </script>
+{% endblock %}
+

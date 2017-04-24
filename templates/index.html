@@ -9,7 +9,6 @@
     <li class="active">{% trans "Home" %}</li>
 {% endblock %}
 
-
 {% compress css %}
     {% block extra_css %}
         <link rel="stylesheet" href="{% static "/assets/stylesheets/leaflet.css" %}">
@@ -148,4 +147,7 @@
 
     <!--End Features-->
 
+{% endblock %}
+{% block footer_js %}{{ block.super }}
+    <script src="{% static "/assets/javascripts/common.js" %}"></script>
 {% endblock %}
