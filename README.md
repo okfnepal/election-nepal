@@ -29,15 +29,15 @@ pip install -r requirements.txt
 python manage.py makemigrations
 python manage.py migrate
 ```
+- Database fixture to load sample data 
+```
+python manage.py loaddata  election-nepal-fixture.json 
+```
+
 
 - Run the server
 ```
 python manage.py runserver
-```
-
-- Database fixture to load sample data 
-```
-python manage.py loaddata  election-nepal-fixture.json 
 ```
 
 - In a web browser, go to [localhost:8000](http://localhost:8000/), and you should see the development site! Please note that the terminal window you are running the development site in must stay open while you are using the site.
