@@ -112,7 +112,7 @@
                         <h3>Recent Added Data </h3>
 
                         {% for list in  recentDatasetList %}
-                            <li><a href="{{ list.GitHub_Link }}" download>{{ list.Data_Title }}<img src="{% static "img/csv.png" %}" height="20"></a>
+                            <li><a href="/data-preview/{{ list.id }}" >{{ list.Data_Title }}<img src="{% static "img/csv.png" %}" height="20"></a>
                             </li>
                         {% endfor %}
 

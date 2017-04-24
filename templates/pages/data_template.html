@@ -43,7 +43,7 @@
             <h3>Recent Added Data</h3>
             <hr>
             {% for list in recentDatasetList %}
-                <li><a href="{{ list.GitHub_Link }}" download>{{ list.Data_Title }}</a></li>
+                <li><a href="/data-preview/{{ list.id }}" >{{ list.Data_Title }}</a></li>
             {% endfor %}
         </div>
 
