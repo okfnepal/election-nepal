@@ -42,12 +42,10 @@
 {% endblock %}
 
 {% block footer_js %}
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
     <script type="text/javascript" src="{% static "/assets/javascripts/csv_to_html_table.js" %}"></script>
-
     <script type="text/javascript">
         function format_link(link) {
             if (link)
@@ -61,7 +59,7 @@
             allow_download: true,
             csv_options: {separator: ',', delimiter: '"'},
             datatables_options: {"paging": true},
-            custom_formatting: [[4, format_link]]
+            custom_formatting: [[2, format_link]]
         });
         $(document).ready(function () {
             $('#table-container-table_wrapper').DataTable();
