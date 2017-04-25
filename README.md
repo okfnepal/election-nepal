@@ -20,6 +20,11 @@ virtualenv venv
 ```
 source venv/bin/activate
 ```
+- Install prerequisites
+```
+sudo apt-get install build-essential libssl-dev libffi-dev python-dev
+```
+
 - Install the requirements using [pip](https://pip.pypa.io/en/stable/)
 ```
 pip install -r requirements.txt
