@@ -2,19 +2,18 @@
 {% load pages_tags mezzanine_tags i18n staticfiles %}
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="{% block meta_keywords %}{% endblock %}">
     <meta name="description" content="{% block meta_description %}{% endblock %}">
+    <meta name="keywords" content="{% block meta_keywords %}{% endblock %}">
     <meta name="google-site-verification" content="07LZiD21mXnnLSSzf1wz7AVqx5JyyY-xJiZDwgvTrwE" />
+    <meta name="author" content="Open Knowledge Nepal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         {% block meta_title %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}</title>
     <link rel="shortcut icon" href="{% static "img/favicon.ico" %}">
-
     {% ifinstalled mezzanine.blog %}
         <link rel="alternate" type="application/rss+xml" title="RSS" href="{% url "blog_post_feed" "rss" %}">
         <link rel="alternate" type="application/atom+xml" title="Atom" href="{% url "blog_post_feed" "atom" %}">
     {% endifinstalled %}
-
     {% compress css %}
         <link rel="stylesheet" href="{% static "/assets/stylesheets/style.css" %}">
         {% block extra_css %}
@@ -22,13 +21,10 @@
     {% endcompress %}
     {% compress js %}
         {% block extra_js %}
-
         {% endblock %}
     {% endcompress %}
-
     {% block extra_head %}{% endblock %}
 </head>
-
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">

@@ -4,6 +4,8 @@
 
 {% block meta_title %}{% trans "Home" %}{% endblock %}
 {% block title %}{% trans "Home" %}{% endblock %}
+{% block meta_description %} {{ siteinfo.Site_Meta_Description }}{% endblock %}
+{% block meta_keywords %}Election Nepal, Election Data, Dataset, Local Election Nepal, Local Election Data , Election Visualization{% endblock %}
 
 {% block breadcrumb_menu %}
     <li class="active">{% trans "Home" %}</li>
@@ -14,7 +16,6 @@
         <link rel="stylesheet" href="{% static "/assets/stylesheets/leaflet.css" %}">
     {% endblock %}
 {% endcompress %}
-
 {% compress js %}
     {% block extra_js %}
         <script src="http://cdnjs.cloudflare.com/ajax/libs/chroma-js/0.5.9/chroma.min.js"></script>
