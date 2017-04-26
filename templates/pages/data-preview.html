@@ -60,16 +60,11 @@
             csv_options: {separator: ',', delimiter: '"'},
             datatables_options: {
                 "paging": true,
-                  "scrollY": 200,
-                     "scrollX": true
-
+                "scrollY": true,
             },
             custom_formatting: [[2, format_link]]
         });
-        $(document).ready(function () {
-            $('#table-container-table_wrapper').DataTable();
 
-        });
 
     </script>
 {% endblock %}

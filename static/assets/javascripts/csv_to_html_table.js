@@ -188,7 +188,7 @@ CsvToHtmlTable = {
       $.when($.get(csv_path)).then(
         function(data){      
           var csv_data = $.csv.toArrays(data, csv_options);
-          
+
           var table_head = "<thead><tr>";
 
           for (head_id = 0; head_id < csv_data[0].length; head_id++) { 
@@ -222,7 +222,7 @@ CsvToHtmlTable = {
           $('#' + el + '-table').DataTable(datatables_options);
 
           if (allow_download)
-            $("#" + el).append("<p><a class='btn btn-info' href='" + csv_path + "'>⇩ Download as CSV</a></p>");
+            $("#" + el).append("<p><a class='btn btn-primary' href='" + csv_path + "'>⇩ Download as CSV</a></p><br><br>");
         });
     }
 }
