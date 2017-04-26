@@ -183,7 +183,7 @@ CsvToHtmlTable = {
       var datatables_options = options.datatables_options || {};
       var custom_formatting = options.custom_formatting || [];
 
-      $("#" + el).html("<table class='table table-striped table-condensed' id='" + el + "-table'></table>");
+      $("#" + el).html("<table class='table table-striped display compact table-condensed hover' id='" + el + "-table' cellspacing=\"0\" width=\"100%\" ></table>");
 
       $.when($.get(csv_path)).then(
         function(data){      

@@ -3,6 +3,7 @@
 {% load mezzanine_tags hometag %}
 {% block extra_css %}
     <link href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css" rel="stylesheet">
+
 {% endblock %}
 {% compress js %}
 
@@ -61,6 +62,8 @@
             datatables_options: {
                 "paging": true,
                 "scrollY": true,
+                "lengthMenu": [[20, 25, 50, -1], [20, 25, 50, "All"]]
+
             },
             custom_formatting: [[2, format_link]]
         });
