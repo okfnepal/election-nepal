@@ -58,7 +58,12 @@
             element: 'table-container',
             allow_download: true,
             csv_options: {separator: ',', delimiter: '"'},
-            datatables_options: {"paging": true},
+            datatables_options: {
+                "paging": true,
+                  "scrollY": 200,
+                     "scrollX": true
+
+            },
             custom_formatting: [[2, format_link]]
         });
         $(document).ready(function () {
