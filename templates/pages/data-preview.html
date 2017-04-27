@@ -1,6 +1,11 @@
 {% extends "pages/page.html" %}
 {% load staticfiles %}
 {% load mezzanine_tags hometag %}
+
+{% block meta_title %}
+{{ dataset_id.Data_Title }}
+{% endblock %}
+
 {% block extra_css %}
     <link href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css" rel="stylesheet">
 
