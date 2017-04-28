@@ -12,7 +12,8 @@
     {% get_recentDataset_tag as recentDatasetList %}
     <div class="container section-page">
         <div class="col-md-9">
-            <table class="table table-striped">
+            <input type="text" id="dataset-search"  onkeyup="myFunction()" placeholder="Search Dataset">
+            <table  id="data-table" class="table table-striped">
                 <thead>
                 <tr>
                     <th>Dataset Title</th>
@@ -48,4 +49,23 @@
         </div>
 
     </div>
+    <script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("dataset-search");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("data-table");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
 {% endblock %}
