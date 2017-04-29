@@ -5989,6 +5989,14 @@ img.footer-logo {
 /**
 mobile friendly css fixes
  **/
+@media screen and (max-width: 375px) {
+  .navbar-brand img {
+    width: 250px;
+    height: auto; } }
+@media screen and (max-width: 320px) {
+  .navbar-brand img {
+    width: 230px;
+    height: auto; } }
 @media screen and (max-width: 768px) {
   .sidebar {
     border: none;
