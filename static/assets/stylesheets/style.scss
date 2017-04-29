@@ -261,6 +261,9 @@ img.footer-logo {
   ul a, ol a {
     color: $text-color;
     text-decoration: none;
+    &:hover {
+          color: $link-color;
+      }
   }
 
   a i {
