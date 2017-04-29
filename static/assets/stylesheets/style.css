@@ -6027,6 +6027,7 @@ mobile friendly css fixes
     margin-bottom: 0; }
 
   .sidebar aside {
+    margin-top: 15px;
     background-color: #ffffff;
     padding: 10px 0 0 10px; } }
 
