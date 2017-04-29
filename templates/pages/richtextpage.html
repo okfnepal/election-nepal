@@ -1,31 +1,58 @@
 {% extends "pages/page.html" %}
 
-{% load mezzanine_tags hometag%}
+{% load mezzanine_tags hometag %}
 
 {% block main %}{{ block.super }}
-<div class="container section-page">
-    <div class="col-md-8">
-  {% get_recentVisualization_tag as recentVisualizationlist %}
-    {% get_recentDataset_tag as recentDatasetList %}
-{% editable page.richtextpage.content %}
-{{ page.richtextpage.content|richtext_filters|safe }}
-{% endeditable %}
-    </div>
-     <div class="col-md-3 sidebar">
-            <h3>Recent Added Visulization</h3>
-            <hr>
-            {% for list in recentVisualizationlist reversed%}
-                <li><a href="/visualization">{{ list.Data_Title }}</a></li>
-            {% endfor %}
-            <hr>
-            <hr>
-            <h3>Recent Added Data</h3>
-            <hr>
-            {% for list in recentDatasetList reversed %}
-                <li><a href="{{ list.GitHub_Link }}" download>{{ list.Data_Title }}</a></li>
-            {% endfor %}
-        </div>
+    <section class="default-background">
+        <div class="container section-page">
+            <div class="col-md-8">
+                {% get_recentVisualization_tag as recentVisualizationlist %}
+                {% get_recentDataset_tag as recentDatasetList %}
+                {% editable page.richtextpage.content %}
+                    {{ page.richtextpage.content|richtext_filters|safe }}
+                {% endeditable %}
+            </div>
+            <div class="col-md-4 sidebar">
+                <aside>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <section class="sidebar-widget">
+                                <h3 class="widget-title">Recent Added Visulization</h3>
+                                {% if recentVisualizationlist %}
+                                    <ul>
+                                        {% for list in recentVisualizationlist reversed %}
+                                            <li>
+                                                <a href="/visualization">
+                                                    <i class="fa fa-bar-chart-o"></i>{{ list.Data_Title }}
+                                                </a>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                {% endif %}
+                            </section>
+                        </div>
+                    </div>
 
-</div>
-    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <section class="sidebar-widget">
+                                <h3 class="widget-title">Recent Added Data</h3>
+                                {% if recentVisualizationlist %}
+                                    <ul>
+                                        {% for list in recentDatasetList reversed %}
+                                            <li>
+                                                <a href="{{ list.GitHub_Link }}" download>
+                                                    <i class="fa fa-file-text-o"></i>{{ list.Data_Title }}
+                                                </a>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                {% endif %}
+                            </section>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
 {% endblock %}

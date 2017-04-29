@@ -5937,14 +5937,39 @@ button.close {
 img.footer-logo {
   height: 60px; }
 
-.sidebar {
-  margin-bottom: 80px; }
-
 .district-label {
   margin-top: -30px; }
   .district-label span {
     background: #ff5252;
     padding: 5px;
     font-size: 21px; }
+
+.default-background {
+  background-color: #f6f6f6; }
+
+.sidebar {
+  margin-bottom: 80px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1); }
+
+.sidebar-widget {
+  margin-bottom: 15px; }
+
+.sidebar-widget .widget-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0; }
+.sidebar-widget ul, .sidebar-widget ol {
+  list-style: none outside none;
+  padding: 0; }
+.sidebar-widget ul > li, .sidebar-widget ol > li {
+  padding: 10px 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.1); }
+.sidebar-widget ul > li:last-child, .sidebar-widget ol > li:last-child {
+  border-bottom: none; }
+.sidebar-widget ul a, .sidebar-widget ol a {
+  color: #333333;
+  text-decoration: none; }
+.sidebar-widget a i {
+  padding-right: 5px; }
 
 /*# sourceMappingURL=style.css.map */

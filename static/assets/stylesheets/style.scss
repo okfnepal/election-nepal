@@ -1,6 +1,8 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
+$default-background-color: #f6f6f6;
+
 .navbar-brand {
   img {
     height: 70px;
@@ -93,7 +95,6 @@
 .section-larger {
   padding: 60px 0;
   background-color: #f6f6f6;
-
 }
 
 .small-box {
@@ -197,10 +198,6 @@ img.footer-logo {
 
 }
 
-.sidebar {
-  margin-bottom: 80px;
-}
-
 .district-label {
   margin-top: -30px;
   span {
@@ -209,4 +206,50 @@ img.footer-logo {
     font-size: 21px;
 
   }
+}
+
+.default-background{
+  background-color: $default-background-color;
+}
+
+.sidebar {
+  margin-bottom: 80px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-widget{
+  margin-bottom: 15px;
+}
+
+.sidebar-widget{
+
+  .widget-title{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  ul, ol{
+    list-style: none outside none;
+    padding: 0;
+  }
+
+  ul > li, ol > li {
+    padding: 10px 0;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+  }
+
+  ul > li:last-child, ol > li:last-child{
+    border-bottom: none;
+  }
+
+  ul a, ol a{
+    color: $text-color;
+    text-decoration: none;
+  }
+
+  a i{
+    padding-right: 5px;
+  }
+
 }
