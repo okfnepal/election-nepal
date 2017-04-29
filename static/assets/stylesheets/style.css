@@ -5989,6 +5989,26 @@ img.footer-logo {
 table th {
   text-align: center; }
 
+.btn-download {
+  background-color: #df3332;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  transition-duration: .25s;
+  transition-property: all;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: .25s;
+  -moz-transition-duration: .25s;
+  -ms-transition-duration: .25s;
+  -o-transition-duration: .25s; }
+
+.btn-download:focus, .btn-download:hover {
+  border: 2px solid #000000;
+  background-color: transparent; }
+
 /**
 mobile friendly css fixes
  **/
