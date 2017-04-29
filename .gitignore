@@ -9,4 +9,3 @@ migrations/
 .idea/watcherTasks.xml
 .idea/vcs.xml
 venv
-env
