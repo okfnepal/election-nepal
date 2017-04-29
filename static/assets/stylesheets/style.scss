@@ -176,21 +176,21 @@ $default-background-color: #f6f6f6;
     color: #f7f7f7;
     font-weight: 600
   }
+
   p a{
     color: rgb(172, 180, 246) !important;
     text-decoration: none;
   }
+
   svg{
     fill: #f7f7f7;
-
+    padding-right: 5px;
   }
-  .footer-license{
-    padding-top: 110px;
-  }
-
-
 }
 
+.footer-license{
+  padding: 15px 0;
+}
 
 img.footer-logo {
   height: 60px;
@@ -268,3 +268,8 @@ img.footer-logo {
   }
 
 }
+
+/**
+mobile friendly css fixes
+ **/
+

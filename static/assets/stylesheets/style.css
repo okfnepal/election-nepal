@@ -5930,9 +5930,11 @@ button.close {
     color: #acb4f6 !important;
     text-decoration: none; }
   .footer svg {
-    fill: #f7f7f7; }
-  .footer .footer-license {
-    padding-top: 110px; }
+    fill: #f7f7f7;
+    padding-right: 5px; }
+
+.footer-license {
+  padding: 15px 0; }
 
 img.footer-logo {
   height: 60px; }
@@ -5983,5 +5985,9 @@ img.footer-logo {
   text-decoration: none; }
 .sidebar-widget a i {
   padding-right: 10px; }
+
+/**
+mobile friendly css fixes
+ **/
 
 /*# sourceMappingURL=style.css.map */
