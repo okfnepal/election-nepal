@@ -230,7 +230,7 @@ img.footer-logo {
   margin-bottom: 20px;
 }
 
-.sidebar-widget{
+.sidebar-widget {
 
   .widget-title {
     font-size: 23px;
@@ -244,7 +244,7 @@ img.footer-logo {
     width: 70%;
   }
 
-  ul, ol{
+  ul, ol {
     list-style: none outside none;
     padding: 0;
   }
@@ -254,22 +254,19 @@ img.footer-logo {
     border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
   }
 
-  ul > li:last-child, ol > li:last-child{
+  ul > li:last-child, ol > li:last-child {
     border-bottom: none;
   }
 
-  ul a, ol a{
+  ul a, ol a {
     color: $text-color;
     text-decoration: none;
   }
 
-  a i{
+  a i {
     padding-right: 10px;
   }
 
 }
 
-/**
-mobile friendly css fixes
- **/
-
+@import "responsive";

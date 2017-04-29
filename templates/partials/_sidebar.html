@@ -1,39 +1,44 @@
 <aside>
     <div class="row">
         <div class="col-md-12">
-            <section class="sidebar-widget">
-                <h3 class="widget-title">Recent Visualization</h3>
-                {% if recentVisualizationlist %}
-                    <ul>
-                        {% for list in recentVisualizationlist reversed %}
-                            <li>
-                                <a href="/visualization">
-                                    <i class="fa fa-bar-chart-o"></i>{{ list.Data_Title }}
-                                </a>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                {% endif %}
-            </section>
+            <div class="row">
+                <div class="col-md-12">
+                    <section class="sidebar-widget">
+                        <h3 class="widget-title">Recent Visualization</h3>
+                        {% if recentVisualizationlist %}
+                            <ul>
+                                {% for list in recentVisualizationlist reversed %}
+                                    <li>
+                                        <a href="/visualization">
+                                            <i class="fa fa-bar-chart-o"></i>{{ list.Data_Title }}
+                                        </a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </section>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <section class="sidebar-widget">
+                        <h3 class="widget-title">Recent Dataset</h3>
+                        {% if recentVisualizationlist %}
+                            <ul>
+                                {% for list in recentDatasetList reversed %}
+                                    <li>
+                                        <a href="/data-preview/{{ list.id }}">
+                                            <i class="fa fa-file-text-o"></i>{{ list.Data_Title }}
+                                        </a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </section>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-md-12">
-            <section class="sidebar-widget">
-                <h3 class="widget-title">Recent Dataset</h3>
-                {% if recentVisualizationlist %}
-                    <ul>
-                        {% for list in recentDatasetList reversed %}
-                            <li>
-                                <a href="/data-preview/{{ list.id }}">
-                                    <i class="fa fa-file-text-o"></i>{{ list.Data_Title }}
-                                </a>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                {% endif %}
-            </section>
-        </div>
-    </div>
 </aside>
