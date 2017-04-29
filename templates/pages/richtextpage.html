@@ -8,31 +8,18 @@
 {% endcompress %}
 
 {% block main %}{{ block.super }}
-<div class="container section-page">
-    <div class="col-md-8">
-  {% get_recentVisualization_tag as recentVisualizationlist %}
-    {% get_recentDataset_tag as recentDatasetList %}
-{% editable page.richtextpage.content %}
-{{ page.richtextpage.content|richtext_filters|safe }}
-{% endeditable %}
-    </div>
-     <div class="col-md-3 sidebar">
-            <h3>Recent Added Visulization</h3>
-            <hr>
-            {% for list in recentVisualizationlist reversed%}
-                <li><a href="/visualization">{{ list.Data_Title }}</a></li>
-            {% endfor %}
-            <hr>
-            <hr>
-            <h3>Recent Added Data</h3>
-            <hr>
-            {% for list in recentDatasetList reversed %}
-                <li><a href="/data-preview/{{ list.id }}" >{{ list.Data_Title }}</a></li>
-            {% endfor %}
+        <div class="container section-page">
+            <div class="col-md-8">
+                {% get_recentVisualization_tag as recentVisualizationlist %}
+                {% get_recentDataset_tag as recentDatasetList %}
+                {% editable page.richtextpage.content %}
+                    {{ page.richtextpage.content|richtext_filters|safe }}
+                {% endeditable %}
+            </div>
+            <div class="col-md-4 sidebar">
+                {% include "partials/_sidebar.html" %}
+            </div>
         </div>
-
-</div>
-    </div>
 {% endblock %}
 {% block footer_js %}{{ block.super }}
 {% endblock %}

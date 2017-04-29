@@ -15,6 +15,7 @@
         <link rel="alternate" type="application/atom+xml" title="Atom" href="{% url "blog_post_feed" "atom" %}">
     {% endifinstalled %}
     {% compress css %}
+        <link rel="stylesheet" href="{% static "/assets/stylesheets/font-awesome/css/font-awesome.min.css" %}">
         <link rel="stylesheet" href="{% static "/assets/stylesheets/style.css" %}">
         {% block extra_css %}
         {% endblock %}
@@ -23,9 +24,11 @@
         {% block extra_js %}
         {% endblock %}
     {% endcompress %}
+
     {% block extra_head %}{% endblock %}
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" class="default-background">
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -60,9 +63,7 @@
 
 </div>
 
-<div class="row ">
-    {% block main %}{% endblock %}
-</div>
+{% block main %}{% endblock %}
 
 
 <footer class="section-footer container-fluid ">
