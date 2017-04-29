@@ -11,7 +11,7 @@
     {% get_recentVisualization_tag as recentVisualizationlist %}
     {% get_recentDataset_tag as recentDatasetList %}
     <div class="container section-page">
-        <div class="col-md-9">
+        <div class="col-md-8">
             <input type="text" id="dataset-search"  onkeyup="myFunction()" placeholder="Search Dataset">
             <table  id="data-table" class="table table-striped">
                 <thead>
@@ -33,21 +33,9 @@
                 </tbody>
             </table>
         </div>
-        <div class="col-md-3 sidebar">
-            <h3>Recent Added Visulization</h3>
-            <hr>
-            {% for list in recentVisualizationlist %}
-                <li><a href="/visualization">{{ list.Data_Title }}</a></li>
-            {% endfor %}
-            <hr>
-            <hr>
-            <h3>Recent Added Data</h3>
-            <hr>
-            {% for list in recentDatasetList %}
-                <li><a href="/data-preview/{{ list.id }}" >{{ list.Data_Title }}</a></li>
-            {% endfor %}
+        <div class="col-md-4 sidebar">
+            {% include "partials/_sidebar.html" %}
         </div>
-
     </div>
     <script>
 function myFunction() {

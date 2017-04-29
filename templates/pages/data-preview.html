@@ -22,28 +22,16 @@
     {% get_recentVisualization_tag as recentVisualizationlist %}
     {% get_recentDataset_tag as recentDatasetList %}
     <div class="container section-page">
-        <div class="col-md-9">
+        <div class="col-md-8">
             <h3>{{ dataset_id.Data_Title }}</h3>
             <hr>
             <div id='table-container'></div>
 
         </div>
         <div class="col-md-3 sidebar">
-            <h3>Recent Added Visulization</h3>
-            <hr>
-            {% for list in recentVisualizationlist reversed %}
-                <li><a href="/visualization">{{ list.Data_Title }}</a></li>
-            {% endfor %}
-            <hr>
-            <hr>
-            <h3>Recent Added Data</h3>
-            <hr>
-            {% for list in recentDatasetList reversed %}
-                <li><a href="/data-preview/{{ list.id }}">{{ list.Data_Title }}</a></li>
-            {% endfor %}
+            {% include "partials/_sidebar.html" %}
         </div>
 
-    </div>
     </div>
 {% endblock %}
 
