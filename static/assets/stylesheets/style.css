@@ -5986,6 +5986,9 @@ img.footer-logo {
 .sidebar-widget a i {
   padding-right: 10px; }
 
+table th {
+  text-align: center; }
+
 /**
 mobile friendly css fixes
  **/
