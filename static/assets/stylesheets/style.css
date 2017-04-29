@@ -5982,9 +5982,20 @@ img.footer-logo {
   border-bottom: none; }
 .sidebar-widget ul a, .sidebar-widget ol a {
   color: #333333;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition-duration: .25s;
+  -moz-transition-duration: .25s;
+  -ms-transition-duration: .25s;
+  -o-transition-duration: .25s;
+  transition-duration: .25s;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all; }
   .sidebar-widget ul a:hover, .sidebar-widget ol a:hover {
-    color: #005d9b; }
+    color: #005d9b;
+    cursor: pointer; }
 .sidebar-widget a i {
   padding-right: 10px; }
 
