@@ -192,7 +192,6 @@ $default-background-color: #f6f6f6;
 }
 
 
-
 img.footer-logo {
   height: 60px;
 
@@ -212,27 +211,37 @@ img.footer-logo {
   h3{
     margin: 0;
   }
+  margin-bottom: 40px;
 }
 
 .default-background{
   background-color: $default-background-color;
 }
 
+
+
 .sidebar {
   margin-bottom: 80px;
   border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 3%;
 }
 
 .sidebar-widget{
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .sidebar-widget{
 
-  .widget-title{
-    font-size: 18px;
+  .widget-title {
+    font-size: 23px;
     font-weight: bold;
     margin: 0;
+    font-size: 23px;
+    font-weight: bold;
+    margin: 0;
+    border-bottom: solid red 2px;
+    padding-bottom: 4px;
+    width: 70%;
   }
 
   ul, ol{
@@ -255,7 +264,7 @@ img.footer-logo {
   }
 
   a i{
-    padding-right: 5px;
+    padding-right: 10px;
   }
 
 }
