@@ -5981,6 +5981,8 @@ img.footer-logo {
 .sidebar-widget ul a, .sidebar-widget ol a {
   color: #333333;
   text-decoration: none; }
+  .sidebar-widget ul a:hover, .sidebar-widget ol a:hover {
+    color: #005d9b; }
 .sidebar-widget a i {
   padding-right: 10px; }
 
