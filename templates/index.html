@@ -4,18 +4,18 @@
 
 {% block meta_title %}{% trans "Home" %}{% endblock %}
 {% block title %}{% trans "Home" %}{% endblock %}
+{% block meta_description %} {{ siteinfo.Site_Meta_Description }}{% endblock %}
+{% block meta_keywords %}Election Nepal, Election Data, Dataset, Local Election Nepal, Local Election Data , Election Visualization{% endblock %}
 
 {% block breadcrumb_menu %}
     <li class="active">{% trans "Home" %}</li>
 {% endblock %}
-
 
 {% compress css %}
     {% block extra_css %}
         <link rel="stylesheet" href="{% static "/assets/stylesheets/leaflet.css" %}">
     {% endblock %}
 {% endcompress %}
-
 {% compress js %}
     {% block extra_js %}
         <script src="http://cdnjs.cloudflare.com/ajax/libs/chroma-js/0.5.9/chroma.min.js"></script>
@@ -69,7 +69,7 @@
         <hr>
         <div class="row">
             <div class="col-xs-4 info-box">
-                <h4 class="text-center">REGISTRED POLITICAL PARTIES </h4>
+                <h4 class="text-center">REGISTERED POLITICAL PARTIES </h4>
                 <h2 class="text-center"><img src="{% static "img/political.png" %}"> <span id="rpp">0</span></h2>
 
             </div>
@@ -79,7 +79,7 @@
 
             </div>
             <div class="col-xs-4 info-box">
-                <h4 class="text-center">TOTAL REGITRED VOTERS</h4>
+                <h4 class="text-center">TOTAL REGISTERED VOTERS</h4>
                 <h2 class="text-center"><img src="{% static "img/voters.png" %}"><span id="trv">0</span></h2>
 
             </div>
@@ -113,7 +113,7 @@
                         <h3>Recent Added Data </h3>
 
                         {% for list in  recentDatasetList %}
-                            <li><a href="{{ list.GitHub_Link }}" download>{{ list.Data_Title }}<img src="{% static "img/csv.png" %}" height="20"></a>
+                            <li><a href="/data-preview/{{ list.id }}" >{{ list.Data_Title }}<img src="{% static "img/csv.png" %}" height="20"></a>
                             </li>
                         {% endfor %}
 
@@ -148,4 +148,7 @@
 
     <!--End Features-->
 
+{% endblock %}
+{% block footer_js %}{{ block.super }}
+    <script src="{% static "/assets/javascripts/common.js" %}"></script>
 {% endblock %}

@@ -1,9 +1,13 @@
 {% extends "pages/page.html" %}
 
-{% load mezzanine_tags hometag %}
+{% load mezzanine_tags hometag%}
+{% compress js %}
+    {% block extra_js %}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    {% endblock %}
+{% endcompress %}
 
 {% block main %}{{ block.super }}
-    <section class="default-background">
         <div class="container section-page">
             <div class="col-md-8">
                 {% get_recentVisualization_tag as recentVisualizationlist %}
@@ -41,7 +45,7 @@
                                     <ul>
                                         {% for list in recentDatasetList reversed %}
                                             <li>
-                                                <a href="{{ list.GitHub_Link }}" download>
+                                                <a href="/data-preview/{{ list.id }}">
                                                     <i class="fa fa-file-text-o"></i>{{ list.Data_Title }}
                                                 </a>
                                             </li>
@@ -54,5 +58,6 @@
                 </aside>
             </div>
         </div>
-    </section>
+{% endblock %}
+{% block footer_js %}{{ block.super }}
 {% endblock %}

@@ -33,7 +33,7 @@
             <div class="row">
 
 
-                {% for vlist in visualizationlist reversed %}
+                {% for vlist in visualizationlist %}
                     <div class="col-md-4">
                         <div class="thumbnail">
                             <a href="{{ vlist.Inforgraphic.url }}" class="example-image-link"
@@ -57,7 +57,7 @@
         <div class="col-md-3 sidebar">
             <h3>Recent Added Visulization</h3>
             <hr>
-            {% for list in recentVisualizationlist reversed %}
+            {% for list in recentVisualizationlist %}
                 <li><a href="/visualization">{{ list.Data_Title }}</a></li>
             {% endfor %}
             <hr>
@@ -65,7 +65,7 @@
             <h3>Recent Added Data</h3>
             <hr>
             {% for list in recentDatasetList %}
-                <li><a href="{{ list.GitHub_Link }}" download>{{ list.Data_Title }}</a></li>
+                <li><a href="/data-preview/{{ list.id }}" >{{ list.Data_Title }}</a></li>
             {% endfor %}
         </div>
 

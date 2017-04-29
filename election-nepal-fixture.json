@@ -1,0 +1,1649 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$30000$JztXtjys2h2R$2jjjVZniX5THJGfKx3hTxqb/1SWLYmqBsoLzUjElO+Q=",
+      "last_login": "2017-04-27T02:16:47Z",
+      "is_superuser": true,
+      "username": "demo",
+      "first_name": "",
+      "last_name": "",
+      "email": "demo@demo.com.np",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2017-04-08T03:57:45Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "sites.site",
+    "pk": 1,
+    "fields": {
+      "domain": "electionnepal.org",
+      "name": "electionnepal.org"
+    }
+  },
+  {
+    "model": "core.sitepermission",
+    "pk": 2,
+    "fields": {
+      "user": [
+        "demo"
+      ],
+      "sites": [
+        [
+          "electionnepal.org"
+        ]
+      ]
+    }
+  },
+  {
+    "model": "pages.page",
+    "pk": 1,
+    "fields": {
+      "keywords_string": "",
+      "site": [
+        "electionnepal.org"
+      ],
+      "title": "Dataset",
+      "slug": "dataset",
+      "_meta_title": "",
+      "description": "Dataset",
+      "gen_description": true,
+      "created": "2017-04-08T03:59:23.599Z",
+      "updated": "2017-04-08T03:59:23.599Z",
+      "status": 2,
+      "publish_date": "2017-04-08T03:59:23.587Z",
+      "expiry_date": null,
+      "short_url": null,
+      "in_sitemap": true,
+      "_order": 0,
+      "content_model": "data_template",
+      "parent": null,
+      "in_menus": "1,2,3",
+      "titles": "Dataset",
+      "login_required": false
+    }
+  },
+  {
+    "model": "pages.page",
+    "pk": 2,
+    "fields": {
+      "keywords_string": "",
+      "site": [
+        "electionnepal.org"
+      ],
+      "title": "Visualization",
+      "slug": "visualization",
+      "_meta_title": "",
+      "description": "Dataset / Visualization",
+      "gen_description": true,
+      "created": "2017-04-08T03:59:41.445Z",
+      "updated": "2017-04-08T03:59:47.040Z",
+      "status": 2,
+      "publish_date": "2017-04-08T03:59:41.434Z",
+      "expiry_date": null,
+      "short_url": null,
+      "in_sitemap": true,
+      "_order": 1,
+      "content_model": "visualization_template",
+      "parent": null,
+      "in_menus": "1,2,3",
+      "titles": "Visualization",
+      "login_required": false
+    }
+  },
+  {
+    "model": "pages.page",
+    "pk": 3,
+    "fields": {
+      "keywords_string": "",
+      "site": [
+        "electionnepal.org"
+      ],
+      "title": "About Us",
+      "slug": "about-us",
+      "_meta_title": "",
+      "description": "Data related to Nepal's Local Election together in Open and Visual Format. Those accumulated data can be easily reused in future for various purposes. Portal will consist interactive visualization and infographics, which will help both national and international parties to get to know about the federal state division and the  status during local election. Volunteers and contributors of Election Nepal project will search, scrap, analyse and visualize various forms of data accumulated in the election which is due on 31st of Baisakh, 2073 (14th May, 2017).",
+      "gen_description": true,
+      "created": "2017-04-08T04:00:52.566Z",
+      "updated": "2017-04-08T04:00:52.566Z",
+      "status": 2,
+      "publish_date": "2017-04-08T04:00:52.536Z",
+      "expiry_date": null,
+      "short_url": null,
+      "in_sitemap": true,
+      "_order": 2,
+      "content_model": "richtextpage",
+      "parent": null,
+      "in_menus": "1,2,3",
+      "titles": "About Us",
+      "login_required": false
+    }
+  },
+  {
+    "model": "pages.page",
+    "pk": 5,
+    "fields": {
+      "keywords_string": "",
+      "site": [
+        "electionnepal.org"
+      ],
+      "title": "Coverages",
+      "slug": "about-us/media-cover",
+      "_meta_title": "",
+      "description": "Coverages about Election Nepal Portal at different Blogs and Media",
+      "gen_description": true,
+      "created": "2017-04-16T17:01:14.333Z",
+      "updated": "2017-04-26T02:31:21.161Z",
+      "status": 2,
+      "publish_date": "2017-04-16T17:01:14Z",
+      "expiry_date": null,
+      "short_url": null,
+      "in_sitemap": true,
+      "_order": 0,
+      "content_model": "richtextpage",
+      "parent": 3,
+      "in_menus": "1,2,3",
+      "titles": "About Us / Coverages",
+      "login_required": false
+    }
+  },
+  {
+    "model": "pages.richtextpage",
+    "pk": 3,
+    "fields": {
+      "content": "<p><span style=\"\">Data related to Nepal's Local Election together in Open and Visual Format. Those accumulated data can be easily reused in future for various purposes. Portal will consist interactive visualization and infographics, which will help both national and international parties to get to know about the federal state division and the  status during local election. Volunteers and contributors of Election Nepal project will search, scrap, analyse and visualize various forms of data accumulated in the election which is due on 31st of Baisakh, 2073 (14th May, 2017).</span></p>\n<p></p>\n<p><span style=\"\">The portal will work as mediator between citizens and Government of Nepal by visualizing provided data into interactive infographic. This will help citizens to understand federal and election data easily in visual format, the people with good programming skills can use our datasets and API to make something better and innovative tools or applications to increase citizens participation in the decision making. We believe that  the more citizens are engaged with election data, there will be more chances of electing right candidate. </span></p>\n<p></p>\n<h3>Aims</h3>\n<ul>\n<li style=\"\"><span style=\"\">To help national and international citizens understand how Local Election at Nepal is held by representing data in a simpler visual format in an understandable approach.</span></li>\n<li style=\"\"><span style=\"\">To help citizens of Nepal understand how current States (Pradesh) structure are divided and how many local bodies are there in their districts.</span></li>\n<li style=\"\"><span style=\"\">Bring the facts about Local election in-front of citizen and help them choose right leaders who can lead their community.</span></li>\n<li style=\"\"><span style=\"\">Analyze and Visualize different kinds of pre-Local Election Data and publish it into the different local newspaper to help citizens to understand what it really means.</span></li>\n<li style=\"\"><span style=\"\">Extract, Collect and Publish data related to Local Election in Open Format (CSV) which can be reusable and redeveloped in different ways.</span></li>\n<li style=\"\"><span style=\"\">Visualization with sharing and embedding features, Individuals or agencies can use in their platforms.</span></li>\n<li style=\"\"><span style=\"\">Give open access to project Application Program Interface (API) by publishing it on Github and let others to manipulate to get something useful.</span></li>\n<li style=\"\"><span style=\"\">To increase citizens’ participation in Local Election.</span></li>\n<li style=\"\"><span style=\"\">To track and make a public leader more Transparent and Accountable during the time of election and throughout the campaign.</span></li>\n<li style=\"\"><span style=\"\">Bring all kinds of data and facts related to Local Election under one domain for easy accessibility.</span></li>\n</ul>"
+    }
+  },
+  {
+    "model": "pages.richtextpage",
+    "pk": 5,
+    "fields": {
+      "content": "<p style=\"text-align: center;\"><strong>Coverages about Election Nepal Portal at different Blogs and Media</strong></p>\n<ul>\n<li>Open Knowledge Nepal - <a href=\"http://oknp.org/blog/electionnepalorg-beta-version-released/\">Beta Version of Election Nepal Portal Released</a></li>\n<li>Code for Nepal - <a href=\"http://codefornepal.org/2017/04/election-nepal-a-mediator-between-citizens-and-government-for-election-data/\">Election Nepal – A mediator between Citizens and Government for Election Data</a></li>\n<li>AndNepal - <a href=\"http://www.andnepal.com/election-nepal-portal-startup-with-data-related-to-nepals-local-election/\">Election Nepal Portal – Startup with Data related to Nepal’s Local Election</a></li>\n<li>Open Nepal - <a href=\"http://opennepal.net/blog/online-collaboration-nepals-data-community-yields-portal-opening-local-election-data\">Online collaboration by Nepal's data community yields a portal for opening local election data</a></li>\n<li>Nikesh Balami - <a href=\"http://www.neekes.com.np/twitter-thread-turns-into-impactful-project/\">Twitter thread turns into impactful project</a></li>\n</ul>"
+    }
+  },
+  {
+    "model": "landing.siteinformation",
+    "pk": 1,
+    "fields": {
+      "Logo": "uploads/logo.png",
+      "Site_Title": "Election Nepal - Nepal Election Data Portal",
+      "Site_Meta_Key": "Election Nepal is a crowdsourced open portal that brings all kind of Data related to Nepal's Local Election together in Open and Visual Format.",
+      "Site_Meta_Description": "Election Nepal is a crowdsourced open portal that brings all kind of Data related to Nepal's Local Election together in Open and Visual Format.",
+      "Footer_Logo": "uploads/ok_lg_logo_nepal_white_rgb.png"
+    }
+  },
+  {
+    "model": "landing.aboutus",
+    "pk": 1,
+    "fields": {
+      "Content": "<p><span style=\"\">Election Nepal is a crowdsourced open portal that brings all kind of Data related to Nepal's Local Election together in Open and Visual Format. Those accumulated data can be easily reused in future for various purposes. Portal will consist interactive visualization and infographics, which will help both national and international parties to get to know about the federal state division and the  status during local election. </span></p>"
+    }
+  },
+  {
+    "model": "landing.data_template",
+    "pk": 1,
+    "fields": {}
+  },
+  {
+    "model": "landing.data",
+    "pk": 1,
+    "fields": {
+      "Data_Title": "Total number of registered political parties per districts",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Demographics/Total%20number%20of%20registered%20political%20parties%20per%20districts.csv",
+      "added": "2017-04-08T03:58:18.880Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 2,
+    "fields": {
+      "Data_Title": "Total number of population and registered voters per districts.",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Demographics/Total%20number%20of%20population%20and%20registered%20voters%20per%20districts.csv",
+      "added": "2017-04-08T04:01:57.595Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 3,
+    "fields": {
+      "Data_Title": "Total number of Local Bodies per districts",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Demographics/Total%20number%20of%20Local%20Bodies%20per%20districts.csv",
+      "added": "2017-04-08T04:02:18.248Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 4,
+    "fields": {
+      "Data_Title": "Total No of Samanpatik representation at CA",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Total%20No%20of%20Samanpatik%20representation%20at%20CA.csv",
+      "added": "2017-04-08T04:02:34.975Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 5,
+    "fields": {
+      "Data_Title": "Political Parties Contact Information.",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Political%20Parties%20Contact%20Info.csv",
+      "added": "2017-04-08T04:02:54.712Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 6,
+    "fields": {
+      "Data_Title": "Name of registered political parties for Local Elections",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Name%20of%20registered%20political%20parties%20for%20Local%20Election.csv",
+      "added": "2017-04-08T04:03:12.036Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 17,
+    "fields": {
+      "Data_Title": "Election expenses limit in Rupees",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Expenditure/Election%20expenditure%20in%20rupees.csv",
+      "added": "2017-04-16T15:11:58.519Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 18,
+    "fields": {
+      "Data_Title": "७५ जिल्लामा कायम मतदान स्थल/केन्द्र",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/७५%20जिल्लामा%20कायम%20मतदान%20स्थल_केन्द्र%20-%20Sheet%201.csv",
+      "added": "2017-04-19T14:09:31.105Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 19,
+    "fields": {
+      "Data_Title": "Total number of voters per districts",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Demographics/Total%20number%20of%20voters%20per%20districts.csv",
+      "added": "2017-04-20T03:38:38.023Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 20,
+    "fields": {
+      "Data_Title": "अर्जुनधारा नगरपालिका-झापा-प्रदेश नं_१",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Geography/झापा/अर्जुनधारा%20नगरपालिका-झापा-प्रदेश%20नं_१.csv",
+      "added": "2017-04-21T01:41:17.106Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 21,
+    "fields": {
+      "Data_Title": "कचनकवल गाउँपालिका-झापा-प्रदेश नं_१",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Geography/झापा/कचनकवल%20गाउँपालिका-झापा-प्रदेश%20नं_१.csv",
+      "added": "2017-04-21T01:41:39.630Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 22,
+    "fields": {
+      "Data_Title": "कन्काई नगरपालिका-झापा-प्रदेश नं_१",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Geography/झापा/कन्काई%20नगरपालिका-झापा-प्रदेश%20नं_१.csv",
+      "added": "2017-04-21T01:42:07.620Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 23,
+    "fields": {
+      "Data_Title": "कमल गाउँपालिका-झापा-प्रदेश नं_१",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Geography/झापा/कमल%20गाउँपालिका-झापा-प्रदेश%20नं_१.csv",
+      "added": "2017-04-21T01:42:50.628Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 24,
+    "fields": {
+      "Data_Title": "गौरादह नगरपालिका-झापा-प्रदेश नं_१",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Geography/झापा/गौरादह%20नगरपालिका-झापा-प्रदेश%20नं_१.csv",
+      "added": "2017-04-21T01:43:13.146Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 25,
+    "fields": {
+      "Data_Title": "गौरिगंज गाउँपालिका-झापा-प्रदेश नं_१",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Geography/झापा/गौरिगंज%20गाउँपालिका-झापा-प्रदेश%20नं_१.csv",
+      "added": "2017-04-21T01:43:35.175Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 26,
+    "fields": {
+      "Data_Title": "झापा गाउँपालिका-झापा-प्रदेश नं_१",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Geography/झापा/झापा%20गाउँपालिका-झापा-प्रदेश%20नं_१.csv",
+      "added": "2017-04-21T01:43:55.814Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 27,
+    "fields": {
+      "Data_Title": "दमक नगरपालिका-झापा-प्रदेश नं_१",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Geography/झापा/दमक%20नगरपालिका-झापा-प्रदेश%20नं_१.csv",
+      "added": "2017-04-21T01:44:26.848Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 28,
+    "fields": {
+      "Data_Title": "बाह्रदशी गाउँपालिका-झापा-प्रदेश नं_१",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Geography/झापा/बाह्रदशी%20गाउँपालिका-झापा-प्रदेश%20नं_१.csv",
+      "added": "2017-04-21T01:44:53.999Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 29,
+    "fields": {
+      "Data_Title": "शिवसताक्षि नगरपालिका-झापा-प्रदेश नं_१",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Geography/झापा/शिवसताक्षि%20नगरपालिका-झापा-प्रदेश%20नं_१.csv",
+      "added": "2017-04-21T01:45:29.878Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 30,
+    "fields": {
+      "Data_Title": "बुद्धशान्ति गाउँपालिका-झापा-प्रदेश नं_१",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Geography/झापा/बुद्धशान्ति%20गाउँपालिका-झापा-प्रदेश%20नं_१.csv",
+      "added": "2017-04-21T01:45:30.962Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 31,
+    "fields": {
+      "Data_Title": "हल्दीवारी गाउँपालिका-झापा-प्रदेश नं_१",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Geography/झापा/हल्दीवारी%20गाउँपालिका-झापा-प्रदेश%20नं_१.csv",
+      "added": "2017-04-21T01:45:59.156Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 32,
+    "fields": {
+      "Data_Title": "भद्रपुर नगरपालिका-झापा-प्रदेश नं_१",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Geography/झापा/भद्रपुर%20नगरपालिका-झापा-प्रदेश%20नं_१.csv",
+      "added": "2017-04-21T01:45:59.991Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 33,
+    "fields": {
+      "Data_Title": "विर्तामोड नगरपालिका-झापा-प्रदेश नं_१",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Geography/झापा/विर्तामोड%20नगरपालिका-झापा-प्रदेश%20नं_१.csv",
+      "added": "2017-04-21T01:46:47.598Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 38,
+    "fields": {
+      "Data_Title": "नयाँ स्थानीय संघीय संरचना र वडा विभाजन, प्रदेश नं_१",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/नयाँ%20स्थानीय%20संघीय%20संरचना%20र%20वडा%20विभाजन/नयाँ%20स्थानीय%20संघीय%20संरचना%20र%20वडा%20विभाजन%2C%20प्रदेश%20नं_१.csv",
+      "added": "2017-04-23T13:13:40.424Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 39,
+    "fields": {
+      "Data_Title": "नयाँ स्थानीय संघीय संरचना र वडा विभाजन, प्रदेश नं_२",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/नयाँ%20स्थानीय%20संघीय%20संरचना%20र%20वडा%20विभाजन/नयाँ%20स्थानीय%20संघीय%20संरचना%20र%20वडा%20विभाजन%2C%20प्रदेश%20नं_२.csv",
+      "added": "2017-04-23T13:14:02.042Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 40,
+    "fields": {
+      "Data_Title": "नयाँ स्थानीय संघीय संरचना र वडा विभाजन, प्रदेश नं_३",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/नयाँ%20स्थानीय%20संघीय%20संरचना%20र%20वडा%20विभाजन/नयाँ%20स्थानीय%20संघीय%20संरचना%20र%20वडा%20विभाजन%2C%20प्रदेश%20नं_३.csv",
+      "added": "2017-04-23T13:14:49.215Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 41,
+    "fields": {
+      "Data_Title": "नयाँ स्थानीय संघीय संरचना र वडा विभाजन, प्रदेश नं_४",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/नयाँ%20स्थानीय%20संघीय%20संरचना%20र%20वडा%20विभाजन/नयाँ%20स्थानीय%20संघीय%20संरचना%20र%20वडा%20विभाजन%2C%20प्रदेश%20नं_४.csv",
+      "added": "2017-04-23T13:15:23.435Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 42,
+    "fields": {
+      "Data_Title": "नयाँ स्थानीय संघीय संरचना र वडा विभाजन, प्रदेश नं_५",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/नयाँ%20स्थानीय%20संघीय%20संरचना%20र%20वडा%20विभाजन/नयाँ%20स्थानीय%20संघीय%20संरचना%20र%20वडा%20विभाजन%2C%20प्रदेश%20नं_५.csv",
+      "added": "2017-04-23T13:16:06.050Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 43,
+    "fields": {
+      "Data_Title": "नयाँ स्थानीय संघीय संरचना र वडा विभाजन, प्रदेश नं_६",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/नयाँ%20स्थानीय%20संघीय%20संरचना%20र%20वडा%20विभाजन/नयाँ%20स्थानीय%20संघीय%20संरचना%20र%20वडा%20विभाजन%2C%20प्रदेश%20नं_६.csv",
+      "added": "2017-04-23T13:16:59.764Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 44,
+    "fields": {
+      "Data_Title": "नयाँ स्थानीय संघीय संरचना र वडा विभाजन, प्रदेश नं_७",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/नयाँ%20स्थानीय%20संघीय%20संरचना%20र%20वडा%20विभाजन/नयाँ%20स्थानीय%20संघीय%20संरचना%20र%20वडा%20विभाजन%2C%20प्रदेश%20नं_७.csv",
+      "added": "2017-04-23T13:17:30.239Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 45,
+    "fields": {
+      "Data_Title": "Total number of male, female and third gender voters per districts",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Demographics/Total%20Male%20and%20female%20voters%20per%20districts.csv",
+      "added": "2017-04-24T07:55:38.837Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 46,
+    "fields": {
+      "Data_Title": "७५ जिल्लाको पुरुष, महिला र तेस्रो लिङी मतदाताको जम्मा संख्या",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Demographics/७५%20जिल्लाको%20पुरुष%2C%20महिला%20र%20तेस्रो%20लिङी%20मतदाताको%20जम्मा%20संख्या.csv",
+      "added": "2017-04-24T07:56:39.177Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 47,
+    "fields": {
+      "Data_Title": "कुम्मायक गाउँपालिका-पाँचथर-प्रदेश नं_१",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Geography/पाँचथर/कुम्मायक%20गाउँपालिका-पाँचथर-प्रदेश%20नं%20_%20१.csv",
+      "added": "2017-04-25T14:08:40.272Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 48,
+    "fields": {
+      "Data_Title": "तुम्वेवा गाउँपालिका-पाँचथर-प्रदेश नं_१",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Geography/पाँचथर/तुम्वेवा%20गाउँपालिका-पाँचथर-प्रदेश%20नं%20_%20१.csv",
+      "added": "2017-04-25T14:11:11.063Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 49,
+    "fields": {
+      "Data_Title": "फालेलुङ गाउँपालिका-पाँचथर-प्रदेश नं_१",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Geography/पाँचथर/फालेलुङ%20गाउँपालिका-पाँचथर-प्रदेश%20नं%20_%20१.csv",
+      "added": "2017-04-25T14:11:53.391Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 50,
+    "fields": {
+      "Data_Title": "फाल्गुनन्द गाउँपालिका-पाँचथर-प्रदेश नं_१",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Geography/पाँचथर/फाल्गुनन्द%20गाउँपालिका-पाँचथर-प्रदेश%20नं%20_%20१.csv",
+      "added": "2017-04-25T14:12:19.834Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 51,
+    "fields": {
+      "Data_Title": "फिदिम नगरपालिका-पाँचथर-प्रदेश नं_१",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Geography/पाँचथर/फिदिम%20नगरपालिका-पाँचथर-प्रदेश%20नं%20_%20१.csv",
+      "added": "2017-04-25T14:12:50.413Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 52,
+    "fields": {
+      "Data_Title": "मिक्लाजुङ गाउँपालिका-पाँचथर-प्रदेश नं_१",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Geography/पाँचथर/मिक्लाजुङ%20गाउँपालिका-पाँचथर-प्रदेश%20नं%20_%20१.csv",
+      "added": "2017-04-25T14:13:26.188Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 53,
+    "fields": {
+      "Data_Title": "याङवरक गाउँपालिका-पाँचथर-प्रदेश नं_१",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Geography/पाँचथर/याङवरक%20गाउँपालिका-पाँचथर-प्रदेश%20नं%20_%20१.csv",
+      "added": "2017-04-25T14:13:57.120Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 54,
+    "fields": {
+      "Data_Title": "हिलिहाङ गाउँपालिका-पाँचथर-प्रदेश नं _१",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Geography/पाँचथर/हिलिहाङ%20गाउँपालिका-पाँचथर-प्रदेश%20नं%20_%20१.csv",
+      "added": "2017-04-25T14:14:25.427Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 55,
+    "fields": {
+      "Data_Title": "ऐसेलुखर्क गाउपालिका-खोटाङ-प्रदेश नं_१",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Geography/खोटाङ/ऐसेलुखर्क%20गाउपालिका-खोटाङ-प्रदेश%20नं_%20१.csv",
+      "added": "2017-04-25T14:15:29.935Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 56,
+    "fields": {
+      "Data_Title": "केपिलासगढी गाउपालिका-खोटाङ-प्रदेश नं_१",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Geography/खोटाङ/केपिलासगढी%20%20गाउपालिका--खोटाङ-प्रदेश%20नं_%20१.csv",
+      "added": "2017-04-25T14:16:01.024Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 57,
+    "fields": {
+      "Data_Title": "खोटेहाङ गाउँपालिका-खोटाङ-प्रदेश नं_१",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Geography/खोटाङ/खोटेहाङ%20गाउँपालिका--खोटाङ-प्रदेश%20नं_%20१.csv",
+      "added": "2017-04-25T14:16:31.031Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 58,
+    "fields": {
+      "Data_Title": "जन्तेढुङगा गाउँपालिका-खोटाङ-प्रदेश नं_१",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Geography/खोटाङ/जन्तेढुङगा%20गाउँपालिका-खोटाङ-प्रदेश%20नं_%20१.csv",
+      "added": "2017-04-25T14:20:10.020Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 59,
+    "fields": {
+      "Data_Title": "दिप्रुङ गाउँपालिका-खोटाङ-प्रदेश नं_१",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Geography/खोटाङ/दिप्रुङ%20गाउँपालिका-खोटाङ-प्रदेश%20नं_%20१.csv",
+      "added": "2017-04-25T14:21:05.729Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 60,
+    "fields": {
+      "Data_Title": "रुपाकोट मझुवागढी नगरपालिका-खोटाङ-प्रदेश नं_१",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Geography/खोटाङ/रुपाकोट%20मझुवागढी%20नगरपालिका--खोटाङ-प्रदेश%20नं_%20१.csv",
+      "added": "2017-04-25T14:21:39.823Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 61,
+    "fields": {
+      "Data_Title": "लामिडाँडा गाउपालिका-खोटाङ-प्रदेश नं_१",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Geography/खोटाङ/लामिडाँडा%20गाउपालिका-खोटाङ-प्रदेश%20नं_%20१.csv",
+      "added": "2017-04-25T14:22:07.609Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 62,
+    "fields": {
+      "Data_Title": "वराहपोखरी गाउँपालिका-खोटाङ-प्रदेश नं_१",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Geography/खोटाङ/वराहपोखरी%20गाउँपालिका-खोटाङ-प्रदेश%20नं_%20१.csv",
+      "added": "2017-04-25T14:22:39.243Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 63,
+    "fields": {
+      "Data_Title": "साकेला गाउपालिका-खोटाङ-प्रदेश नं_१",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Geography/खोटाङ/साकेला%20गाउपालिका-खोटाङ-प्रदेश%20नं_%20१.csv",
+      "added": "2017-04-25T14:23:02.698Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 64,
+    "fields": {
+      "Data_Title": "हलेसी तुवाचुङ नगरपालिका-खोटाङ-प्रदेश नं_१",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Geography/खोटाङ/हलेसी%20%20तुवाचुङ%20नगरपालिका-खोटाङ-प्रदेश%20नं_%20१.csv",
+      "added": "2017-04-25T14:23:34.513Z"
+    }
+  },
+  {
+    "model": "landing.data",
+    "pk": 65,
+    "fields": {
+      "Data_Title": "Total number of local bodies and ward per districts",
+      "GitHub_Link": "https://raw.githubusercontent.com/okfnepal/election-nepal-data/master/Total%20number%20of%20local%20bodies%20and%20ward%20per%20districts.csv",
+      "added": "2017-04-25T14:24:25.669Z"
+    }
+  },
+  {
+    "model": "landing.visualization_template",
+    "pk": 2,
+    "fields": {}
+  },
+  {
+    "model": "landing.visualization",
+    "pk": 10,
+    "fields": {
+      "Data_Title": "निवाचन आचारसंहिता",
+      "Inforgraphic": "uploads/Visualization/c9iindjuiaawm8f.jpg",
+      "GitHub_Link": "",
+      "added": "2017-04-17T03:47:14.440Z",
+      "updated": "2017-04-17T03:47:14.440Z"
+    }
+  },
+  {
+    "model": "landing.visualization",
+    "pk": 11,
+    "fields": {
+      "Data_Title": "मतपत्रमा छाप लगाउने सहि तरिका",
+      "Inforgraphic": "uploads/Visualization/c9ii58vvoaactbg_1024.jpg",
+      "GitHub_Link": "",
+      "added": "2017-04-17T03:50:43.660Z",
+      "updated": "2017-04-17T09:01:09.117Z"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2017-04-08T03:58:18.888Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "landing",
+        "data"
+      ],
+      "object_id": "1",
+      "object_repr": "sdf",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2017-04-08T03:59:05.113Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "landing",
+        "siteinformation"
+      ],
+      "object_id": "1",
+      "object_repr": "Edit Here",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2017-04-08T03:59:23.659Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "landing",
+        "data_template"
+      ],
+      "object_id": "1",
+      "object_repr": "Dataset",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2017-04-08T03:59:41.484Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "landing",
+        "visualization_template"
+      ],
+      "object_id": "2",
+      "object_repr": "Dataset / Visualization",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2017-04-08T04:00:52.588Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "pages",
+        "richtextpage"
+      ],
+      "object_id": "3",
+      "object_repr": "About Us",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2017-04-08T04:01:35.706Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "landing",
+        "data"
+      ],
+      "object_id": "1",
+      "object_repr": "Total number of registered political parties per districts",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Data_Title\", \"GitHub_Link\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2017-04-08T04:01:57.603Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "landing",
+        "data"
+      ],
+      "object_id": "2",
+      "object_repr": "Total number of population and registered voters per districts.",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2017-04-08T04:02:18.248Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "landing",
+        "data"
+      ],
+      "object_id": "3",
+      "object_repr": "Total number of Local Bodies per districts",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2017-04-08T04:02:34.976Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "landing",
+        "data"
+      ],
+      "object_id": "4",
+      "object_repr": "Total No of Samanpatik representation at CA",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2017-04-08T04:02:54.714Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "landing",
+        "data"
+      ],
+      "object_id": "5",
+      "object_repr": "Political Parties Contact Information.",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2017-04-08T04:03:12.044Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "landing",
+        "data"
+      ],
+      "object_id": "6",
+      "object_repr": "Name of registered political parties for Local Election",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2017-04-08T04:05:38.336Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "landing",
+        "data"
+      ],
+      "object_id": "10",
+      "object_repr": "Name of registered political parties for Local Election",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2017-04-08T04:05:53.500Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "landing",
+        "data"
+      ],
+      "object_id": "10",
+      "object_repr": "Name of registered political parties for Local Election",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2017-04-08T04:24:36.643Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "sites",
+        "site"
+      ],
+      "object_id": "1",
+      "object_repr": "http://electionnepal.org/",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"domain\", \"name\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2017-04-08T04:30:53.951Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "pages",
+        "richtextpage"
+      ],
+      "object_id": "4",
+      "object_repr": "About Us / Contributor",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2017-04-08T04:32:50.701Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "sites",
+        "site"
+      ],
+      "object_id": "1",
+      "object_repr": "electionnepal.org",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"domain\", \"name\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+      "action_time": "2017-04-09T15:52:53.698Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "landing",
+        "aboutus"
+      ],
+      "object_id": "1",
+      "object_repr": "About Us",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+      "action_time": "2017-04-13T14:23:16.651Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "landing",
+        "data"
+      ],
+      "object_id": "5",
+      "object_repr": "Political Parties Contact Information.",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"GitHub_Link\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+      "action_time": "2017-04-13T14:25:44.948Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "landing",
+        "data"
+      ],
+      "object_id": "4",
+      "object_repr": "Total No of Samanpatik representation at CA",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"GitHub_Link\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+      "action_time": "2017-04-13T14:26:25.158Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "landing",
+        "data"
+      ],
+      "object_id": "3",
+      "object_repr": "Total number of Local Bodies per districts",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"GitHub_Link\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+      "action_time": "2017-04-13T14:26:48.921Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "landing",
+        "data"
+      ],
+      "object_id": "2",
+      "object_repr": "Total number of population and registered voters per districts.",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"GitHub_Link\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+      "action_time": "2017-04-13T14:27:17.569Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "landing",
+        "data"
+      ],
+      "object_id": "2",
+      "object_repr": "Total number of population and registered voters per districts.",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+      "action_time": "2017-04-13T14:27:58.486Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "landing",
+        "data"
+      ],
+      "object_id": "1",
+      "object_repr": "Total number of registered political parties per districts",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"GitHub_Link\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+      "action_time": "2017-04-16T15:11:58.529Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "landing",
+        "data"
+      ],
+      "object_id": "17",
+      "object_repr": "Election expenditure in rupees",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+      "action_time": "2017-04-16T16:54:57.188Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "auth",
+        "user"
+      ],
+      "object_id": "2",
+      "object_repr": "nikeshbalami",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+      "action_time": "2017-04-16T16:56:39.448Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "auth",
+        "user"
+      ],
+      "object_id": "2",
+      "object_repr": "nikeshbalami",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"first_name\", \"last_name\", \"email\"]}}, {\"added\": {\"object\": \"SitePermission object\", \"name\": \"Site permission\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+      "action_time": "2017-04-16T16:56:49.177Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "auth",
+        "user"
+      ],
+      "object_id": "2",
+      "object_repr": "nikeshbalami",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"is_staff\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+      "action_time": "2017-04-16T17:00:47.438Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "pages",
+        "page"
+      ],
+      "object_id": "4",
+      "object_repr": "About Us / Contributor",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+      "action_time": "2017-04-16T17:01:14.372Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "pages",
+        "richtextpage"
+      ],
+      "object_id": "5",
+      "object_repr": "About Us / Media Cover",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+      "action_time": "2017-04-17T03:44:23.262Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "landing",
+        "visualization"
+      ],
+      "object_id": "9",
+      "object_repr": "test",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+      "action_time": "2017-04-17T03:44:29.487Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "landing",
+        "visualization"
+      ],
+      "object_id": "9",
+      "object_repr": "test",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+      "action_time": "2017-04-17T03:47:14.449Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "landing",
+        "visualization"
+      ],
+      "object_id": "10",
+      "object_repr": "निवाचन आचारसंहिता",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+      "action_time": "2017-04-17T03:50:43.668Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "landing",
+        "visualization"
+      ],
+      "object_id": "11",
+      "object_repr": "मत पत्रमा छाप लगाउने सहि तरिका",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+      "action_time": "2017-04-18T01:07:10.522Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "pages",
+        "richtextpage"
+      ],
+      "object_id": "5",
+      "object_repr": "About Us / Coverages",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"title\", \"keywords\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+      "action_time": "2017-04-22T04:33:13.726Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "landing",
+        "data"
+      ],
+      "object_id": "34",
+      "object_repr": "test",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+      "action_time": "2017-04-22T04:33:35.878Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "landing",
+        "data"
+      ],
+      "object_id": "34",
+      "object_repr": "test",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+      "action_time": "2017-04-22T04:33:54.553Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "landing",
+        "data"
+      ],
+      "object_id": "35",
+      "object_repr": "test",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+      "action_time": "2017-04-22T04:33:54.746Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "landing",
+        "data"
+      ],
+      "object_id": "36",
+      "object_repr": "test",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+      "action_time": "2017-04-22T04:34:12.428Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "landing",
+        "data"
+      ],
+      "object_id": "36",
+      "object_repr": "test",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+      "action_time": "2017-04-22T04:34:18.037Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "landing",
+        "data"
+      ],
+      "object_id": "35",
+      "object_repr": "test",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+      "action_time": "2017-04-22T05:02:38.593Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "landing",
+        "data"
+      ],
+      "object_id": "37",
+      "object_repr": "test",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+      "action_time": "2017-04-22T05:17:35.363Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "landing",
+        "data"
+      ],
+      "object_id": "37",
+      "object_repr": "test",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+      "action_time": "2017-04-23T16:39:22.668Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "auth",
+        "user"
+      ],
+      "object_id": "2",
+      "object_repr": "nikeshbalami",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 145,
+    "fields": {
+      "action_time": "2017-04-26T14:52:41.590Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "auth",
+        "user"
+      ],
+      "object_id": "2",
+      "object_repr": "nikeshbalami",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 146,
+    "fields": {
+      "action_time": "2017-04-26T14:52:58.005Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "auth",
+        "user"
+      ],
+      "object_id": "1",
+      "object_repr": "demo",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 147,
+    "fields": {
+      "action_time": "2017-04-26T14:53:04.864Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "auth",
+        "user"
+      ],
+      "object_id": "1",
+      "object_repr": "demo",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"username\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 148,
+    "fields": {
+      "action_time": "2017-04-26T14:53:12.526Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "auth",
+        "user"
+      ],
+      "object_id": "1",
+      "object_repr": "demo",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"email\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 149,
+    "fields": {
+      "action_time": "2017-04-26T14:53:24.578Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "auth",
+        "user"
+      ],
+      "object_id": "1",
+      "object_repr": "demo",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"email\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 150,
+    "fields": {
+      "action_time": "2017-04-26T14:59:16.067Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "auth",
+        "user"
+      ],
+      "object_id": "1",
+      "object_repr": "demo",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"username\", \"email\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 151,
+    "fields": {
+      "action_time": "2017-04-26T14:59:28.875Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "auth",
+        "user"
+      ],
+      "object_id": "1",
+      "object_repr": "demo",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 152,
+    "fields": {
+      "action_time": "2017-04-26T14:59:39.886Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "auth",
+        "user"
+      ],
+      "object_id": "1",
+      "object_repr": "demo",
+      "action_flag": 2,
+      "change_message": "[{\"added\": {\"object\": \"SitePermission object\", \"name\": \"Site permission\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 153,
+    "fields": {
+      "action_time": "2017-04-27T02:13:21.001Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "auth",
+        "user"
+      ],
+      "object_id": "1",
+      "object_repr": "demo",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 154,
+    "fields": {
+      "action_time": "2017-04-27T02:13:36.074Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "auth",
+        "user"
+      ],
+      "object_id": "1",
+      "object_repr": "demo",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"email\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 155,
+    "fields": {
+      "action_time": "2017-04-27T02:16:53.242Z",
+      "user": [
+        "demo"
+      ],
+      "content_type": [
+        "auth",
+        "user"
+      ],
+      "object_id": "1",
+      "object_repr": "demo",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"username\"]}}]"
+    }
+  }
+]

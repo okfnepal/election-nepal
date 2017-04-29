@@ -20,6 +20,11 @@ virtualenv venv
 ```
 source venv/bin/activate
 ```
+- Install prerequisites
+```
+sudo apt-get install build-essential libssl-dev libffi-dev python-dev
+```
+
 - Install the requirements using [pip](https://pip.pypa.io/en/stable/)
 ```
 pip install -r requirements.txt
@@ -29,6 +34,11 @@ pip install -r requirements.txt
 python manage.py makemigrations
 python manage.py migrate
 ```
+- Database fixture to load sample data 
+```
+python manage.py loaddata  election-nepal-fixture.json 
+```
+
 
 - Run the server
 ```
