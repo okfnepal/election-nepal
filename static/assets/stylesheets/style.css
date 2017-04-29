@@ -5944,6 +5944,9 @@ img.footer-logo {
     padding: 5px;
     font-size: 21px; }
 
+.section-page h3 {
+  margin: 0; }
+
 .default-background {
   background-color: #f6f6f6; }
 
