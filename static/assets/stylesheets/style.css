@@ -5930,9 +5930,11 @@ button.close {
     color: #acb4f6 !important;
     text-decoration: none; }
   .footer svg {
-    fill: #f7f7f7; }
-  .footer .footer-license {
-    padding-top: 110px; }
+    fill: #f7f7f7;
+    padding-right: 5px; }
+
+.footer-license {
+  padding: 15px 0; }
 
 img.footer-logo {
   height: 60px; }
@@ -5980,17 +5982,67 @@ img.footer-logo {
   border-bottom: none; }
 .sidebar-widget ul a, .sidebar-widget ol a {
   color: #333333;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition-duration: .25s;
+  -moz-transition-duration: .25s;
+  -ms-transition-duration: .25s;
+  -o-transition-duration: .25s;
+  transition-duration: .25s;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all; }
   .sidebar-widget ul a:hover, .sidebar-widget ol a:hover {
-    color: #005d9b; }
+    color: #005d9b;
+    cursor: pointer; }
 .sidebar-widget a i {
   padding-right: 10px; }
 
-@media (max-width: 992px) {
-  .sidebar {
-    margin-top: 40px; }
+table th {
+  text-align: center; }
 
-  .sidebar-widget .widget-title {
-    width: 100%; } }
+.btn-download {
+  background-color: #df3332;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  transition-duration: .25s;
+  transition-property: all;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: .25s;
+  -moz-transition-duration: .25s;
+  -ms-transition-duration: .25s;
+  -o-transition-duration: .25s; }
+
+.btn-download:focus, .btn-download:hover {
+  border: 2px solid #000000;
+  background-color: transparent; }
+
+/**
+mobile friendly css fixes
+ **/
+@media screen and (max-width: 375px) {
+  .navbar-brand img {
+    width: 250px;
+    height: auto; } }
+@media screen and (max-width: 320px) {
+  .navbar-brand img {
+    width: 230px;
+    height: auto; } }
+@media screen and (max-width: 768px) {
+  .sidebar {
+    border: none;
+    padding-left: 2%;
+    margin-bottom: 0; }
+
+  .sidebar aside {
+    margin-top: 15px;
+    background-color: #ffffff;
+    padding: 10px 0 0 10px; } }
+
 
 /*# sourceMappingURL=style.css.map */

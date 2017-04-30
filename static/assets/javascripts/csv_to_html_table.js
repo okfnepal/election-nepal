@@ -222,7 +222,7 @@ CsvToHtmlTable = {
           $('#' + el + '-table').DataTable(datatables_options);
 
           if (allow_download)
-            $("#" + el).append("<p><a class='btn btn-primary' href='" + csv_path + "' download>⇩ Download as CSV</a></p><br><br>");
+            $("#" + el).append("<div><a class='btn btn-download' href='" + csv_path + "' download><i class='fa fa-download'>&nbsp;</i> Download as CSV</a></div>");
         });
     }
 }

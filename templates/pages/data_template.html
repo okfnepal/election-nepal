@@ -14,7 +14,7 @@
         <div class="col-md-8">
             <input type="text" id="dataset-search"  onkeyup="myFunction()" placeholder="Search Dataset">
             <table  id="data-table" class="table table-striped">
-                <thead>
+                <thead class="text-center">
                 <tr>
                     <th>Dataset Title</th>
                     <th>Download</th>
@@ -25,7 +25,7 @@
                 {% for list in DatasetList %}
                     <tr>
                         <td><a href="/data-preview/{{ list.id }}">{{ list.Data_Title }}</a></td>
-                        <td><a href="/data-preview/{{ list.id }}" class="btn btn-primary active">⇩</a></td>
+                        <td class="text-center"><a href="/data-preview/{{ list.id }}"><i class="fa fa-download"></i></a></td>
                         <td>{{ list.added |date }}</td>
                     </tr>
 
