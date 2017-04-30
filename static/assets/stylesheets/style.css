@@ -6000,7 +6000,7 @@ img.footer-logo {
   padding-right: 10px; }
 
 table th {
-  text-align: center; }
+  text-align: left; }
 
 .btn-download {
   background-color: #df3332;
@@ -6025,15 +6025,11 @@ table th {
 /**
 mobile friendly css fixes
  **/
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
   .navbar-brand img {
     width: 250px;
     height: auto; } }
-@media screen and (max-width: 320px) {
-  .navbar-brand img {
-    width: 230px;
-    height: auto; } }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .sidebar {
     border: none;
     padding-left: 2%;
@@ -6041,8 +6037,9 @@ mobile friendly css fixes
 
   .sidebar aside {
     margin-top: 15px;
-    background-color: #ffffff;
-    padding: 10px 0 0 10px; } }
+    padding: 10px 0 0 10px; }
 
+  .sidebar-widget .widget-title {
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
