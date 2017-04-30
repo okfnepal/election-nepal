@@ -5986,4 +5986,11 @@ img.footer-logo {
 .sidebar-widget a i {
   padding-right: 10px; }
 
+@media (max-width: 992px) {
+  .sidebar {
+    margin-top: 40px; }
+
+  .sidebar-widget .widget-title {
+    width: 100%; } }
+
 /*# sourceMappingURL=style.css.map */

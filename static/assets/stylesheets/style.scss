@@ -274,3 +274,18 @@ img.footer-logo {
   }
 
 }
+
+
+
+@media (max-width: $screen-md-min) {
+  .sidebar{
+          margin-top: 40px;
+  }
+  .sidebar-widget {
+    .widget-title {
+      width: 100%;
+    }
+
+
+  }
+}
