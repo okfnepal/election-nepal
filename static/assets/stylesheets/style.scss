@@ -1,4 +1,4 @@
-@import "bootstrap";
+@import 'bootstrap';
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
 $default-background-color: #f6f6f6;
@@ -23,7 +23,7 @@ $default-background-color: #f6f6f6;
   margin-bottom: 20px;
   position: relative;
   z-index: 1;
-  font-family: "Arial Narrow";
+  font-family: 'Arial Narrow';
 
   h4 {
     font-weight: 600;
@@ -107,7 +107,7 @@ $default-background-color: #f6f6f6;
   overflow: hidden;
   background-color: #ffffff;
   margin-bottom: 20px;
-  padding: 0px 0px 3px 20px;
+  padding: 0 0 3px 20px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
