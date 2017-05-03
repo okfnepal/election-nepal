@@ -36,16 +36,18 @@ $default-background-color: #f6f6f6;
     font-weight: 700;
     float: left;
   }
+  
   span {
     font-weight: 600;
 
   }
+  
   hr {
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
     border: 0;
     padding: 0 30px;
-    border-top: 3px solid #eeeeee;
+    border-top: 3px solid #eee;
   }
 
 }
@@ -156,7 +158,7 @@ $default-background-color: #f6f6f6;
 }
 
 .section-footer {
-  color: #ffffff;
+  color: #fff;
   min-height: 150px;
   padding: 30px 0;
   background-color: #646464;
@@ -256,7 +258,7 @@ box-shadow:  inset 0 1px 1px rgba(0, 0, 0, .075);
     font-size: 23px;
     font-weight: bold;
     margin: 0;
-    border-bottom: solid red 2px;
+    border-bottom: solid #ff0000 2px;
     padding-bottom: 4px;
     width: 70%;
   }
@@ -307,15 +309,14 @@ table th {
 
 .btn-download {
   background-color: #df3332;
-  border: 2px solid #ffffff;
-  color: #ffffff;
+  border: 2px solid #fff;
+  color: #fff;
   transition-duration: .25s;
   transition-property: all;
   -webkit-transition-property: all;
   -moz-transition-property: all;
   -ms-transition-property: all;
   -o-transition-property: all;
-  transition-property: all;
   -webkit-transition-duration: .25s;
   -moz-transition-duration: .25s;
   -ms-transition-duration: .25s;
@@ -323,7 +324,7 @@ table th {
 }
 
 .btn-download:focus, .btn-download:hover {
-  border: 2px solid #000000;
+  border: 2px solid #000;
   background-color: rgba(0, 0, 0, 0);
 }
 
