@@ -39,7 +39,6 @@ python manage.py migrate
 python manage.py loaddata  election-nepal-fixture.json 
 ```
 
-
 - Run the server
 ```
 python manage.py runserver
@@ -55,6 +54,7 @@ deactivate
 # Contributing
  Election Nepal is an open source project. Repositories are hosted on  GitHub, so contributing is  easy and anyone can get involved.
 
+You can browse the [issues](https://github.com/okfnepal/election-nepal/issues) to see where you can contribute. Issues tagged with `help wanted` are specifically open for contributions from community.
 # License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
