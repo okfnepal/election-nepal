@@ -22,7 +22,7 @@ New feature branches can be named anything except for `master` or `dev`. Once yo
     git commit -m 'made some changes'
     git push
 
-Once your branch is pushed up to the repo, navigate to the [pull request section on GitHub](https://github.com/studenton/minor-project/compare?expand=1) and [create a pull-request](https://help.github.com/articles/creating-a-pull-request/) from the base of `dev` to your feature branch. Write any comments that are relevant, tag users or reference issues.  
+Once your branch is pushed up to the repo, navigate to the [pull request section on GitHub](https://github.com/okfnepal/election-nepal/compare?expand=1) and [create a pull-request](https://help.github.com/articles/creating-a-pull-request/) from the base of `dev` to your feature branch. Write any comments that are relevant, tag users or reference issues.  
 
 After the pull-request is submitted and the code is reviewed and approved, the feature branch will be merged into `dev`, and that feature branch will be closed. The can be done on GitHub or via command line:
 
