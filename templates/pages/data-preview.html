@@ -41,12 +41,6 @@
             crossorigin="anonymous"></script>
     <script type="text/javascript" src="{% static "/assets/javascripts/csv_to_html_table.js" %}"></script>
     <script type="text/javascript">
-        function format_link(link) {
-            if (link)
-                return "<a href='" + link + "' target='_blank'>" + link + "</a>";
-            else
-                return "";
-        }
         CsvToHtmlTable.init({
             csv_path: '{{ dataset_id.GitHub_Link }}',
             element: 'table-container',
@@ -59,7 +53,6 @@
                 "lengthMenu": [[20, 25, 50, -1], [20, 25, 50, "All"]]
 
             },
-            custom_formatting: [[2, format_link]]
         });
 
 
