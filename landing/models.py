@@ -83,5 +83,47 @@ class Visualization(models.Model):
         return self.Data_Title
 
 
+class Candidate(models.Model):
 
+    status_choices = (
+        ('Approved', 'Approved'),
+        ('Pending', 'Pending'),
 
+    )
+    Name = models.CharField(max_length=100, null=True, blank=True)
+    Party = models.CharField(max_length=100, null=True, blank=True)
+    Position = models.CharField(max_length=100, null=True, blank=True)
+    Picture = models.ImageField(blank=True)
+    Election_Symbol = models.ImageField(blank=True)
+    Short_Bio = models.CharField(max_length=100, null=True, blank=True)
+    Age = models.IntegerField(null=True, blank=True)
+    Education = models.CharField(max_length=100, null=True, blank=True)
+    Experience = models.CharField(max_length=500, null=True, blank=True)
+    Promises = models.CharField(max_length=500, null=True, blank=True)
+
+    Contributor_Name = models.CharField(max_length=100, null=True, blank=True)
+    Contributor_PhoneNumber = models.CharField(max_length=100, null=True, blank=True)
+
+    Status = models.CharField(max_length=225, choices=status_choices, blank=True)
+
+    def picture_inline(self):
+        return u'<img width="150" height="150" src="/static/media/%s" />' % self.Picture
+
+    picture_inline.short_description = 'Picture'
+    picture_inline.allow_tags = True
+
+    def symbol_inline(self):
+        return u'<img width="150" height="150" src="/static/media/%s" />' % self.Election_Symbol
+
+    symbol_inline.short_description = 'Election Symbol'
+    symbol_inline.allow_tags = True
+
+    class Meta:
+        verbose_name = 'Candidates'
+        verbose_name_plural = 'Candidate'
+
+    def __str__(self):
+        return self.Name+":"+self.Party
+
+    def __unicode__(self):
+        return self.Name+":"+self.Party
