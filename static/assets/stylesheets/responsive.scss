@@ -1,11 +1,26 @@
 /**
 mobile friendly css fixes
  **/
+@import "bootstrap/_variables";
 
 @media screen and (max-width:$screen-xs ){
+
+    .navbar-brand{
+      padding-left: 0;
+      padding-right: 0;
+    }
+
   .navbar-brand img {
     width: 250px;
     height: auto;
+  }
+}
+
+@media screen and (max-width: $screen-sm) and (min-width: 300px){
+
+  .legend {
+    margin-top: 70px !important;
+    margin-right: 5px !important;
   }
 }
 

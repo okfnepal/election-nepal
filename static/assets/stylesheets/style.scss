@@ -323,5 +323,24 @@ table th {
   background-color: rgba(0, 0, 0, 0);
 }
 
+
+  .province-legend {
+    padding: 5px !important;
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+
+      li {
+        padding: 2px 0;
+      }
+
+      i {
+        margin-right: 5px;
+      }
+    }
+  }
+
+
 @import "responsive";
 

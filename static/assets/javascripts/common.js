@@ -79,7 +79,6 @@ function getUpdate(e) {
             document.getElementById("rpp").innerHTML = this.gsx$registeredpoliticalparties.$t;
             document.getElementById("trv").innerHTML = this.gsx$totalnumberofregisteredvoters.$t;
 
-
         }
 
     });
@@ -88,15 +87,19 @@ function getUpdate(e) {
 
 
 // map layer
-(function () {
-    var map = L.map('map', {maxZoom: 7.9, minZoom: 6.9}),
+(function (window) {
+    var map = L.map('map', {maxZoom: 7.9, minZoom: 5}),
         topoLayer = new L.TopoJSON(),
         colorScale = chroma
             .scale(['#D5E3FF', '#003171'])
             .domain([0, 1]);
-    map.dragging.disable();
+    map.dragging.enable();
 
-    map.setView([28.1999999, 84.100140], 6.9);
+    var initialZoom = 6.9;
+    if(window.innerWidth < 700){
+        initialZoom = 6;
+    }
+    map.setView([28.1999999, 84.100140], initialZoom);
 
     $.getJSON('static/assets/javascripts/nepal-districts.topo.json').done(addTopoData);
 
@@ -206,7 +209,7 @@ function getUpdate(e) {
     // Map Legend
     var legend = L.control({position: 'topright'});
     legend.onAdd = function (map) {
-        var div = L.DomUtil.create('div', 'legend');
+        var div = L.DomUtil.create('div', 'legend province-legend');
         var labels = [
             "Province No. 1",
             "Province No. 2",
@@ -218,16 +221,29 @@ function getUpdate(e) {
         ];
         var grades = [1, 2, 3, 4, 5, 6, 7];
         div.innerHTML = '<div><h6>Province Index</h6></div>';
+        var list = "<ul>";
         for (var i = 0; i < grades.length; i++) {
-            div.innerHTML += '<i style="background:'
+            list += '<li><i style="background:'
+                + getProvinceColor(grades[i]) + '">&nbsp;&nbsp;&nbsp;&nbsp;</i>' + labels[i] + '</li>';
+            /*div.innerHTML += '<i style="background:'
                 + getProvinceColor(grades[i]) + '">&nbsp;&nbsp;&nbsp;&nbsp;</i>&nbsp;&nbsp;'
-                + labels[i] + '<br />';
+                + labels[i] + '<br />';*/
         }
+        list += "</ul>";
+        div.innerHTML += list;
+
         return div;
     }
     legend.addTo(map);
 
     // end legend
 
-}());
+    window.onresize = function(evt) {
+        var initialZoom = 6.9;
+        if (window.innerWidth < 700) {
+            initialZoom = 6;
+        }
+        map.setView([28.1999999, 84.100140], initialZoom);
+    }
+}(window));
 
