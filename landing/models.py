@@ -10,6 +10,7 @@ DATASET_TYPES = [
     ('Political Parties', 'Political Parties'),
     ('Federal', 'Federal'),
     ('Results', 'Results'),
+    ('Others', 'Others'),
 ]
 DISTRICT = [
     ('Achham ', 'Achham'),
