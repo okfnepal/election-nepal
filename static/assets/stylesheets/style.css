@@ -5823,7 +5823,7 @@ button.close {
   margin-bottom: 20px;
   position: relative;
   z-index: 1;
-  font-family: "Arial Narrow"; }
+  font-family: 'Arial Narrow'; }
   .index-box h4 {
     font-weight: 600; }
   .index-box h1 {
@@ -5834,11 +5834,11 @@ button.close {
   .index-box span {
     font-weight: 600; }
   .index-box hr {
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
     border: 0;
     padding: 0 30px;
-    border-top: 3px solid #eeeeee; }
+    border-top: 3px solid #eee; }
 
 .info-box h2 {
   margin-top: 18px;
@@ -5851,7 +5851,7 @@ button.close {
 .section-small {
   background-color: #ff5252;
   color: #fff;
-  padding: 130px 0px 60px 0px;
+  padding: 130px 0 60px 0;
   margin-top: -130px; }
   .section-small h3 {
     font-weight: 600;
@@ -5879,12 +5879,12 @@ button.close {
   overflow: hidden;
   background-color: #ffffff;
   margin-bottom: 20px;
-  padding: 0px 0px 3px 20px;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  -ms-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s; }
+  padding: 0 0 3px 20px;
+  -webkit-transition: all .3s ease 0s;
+  -moz-transition: all .3s ease 0s;
+  -o-transition: all .3s ease 0s;
+  -ms-transition: all .3s ease 0s;
+  transition: all .3s ease 0s; }
   .small-box:hover, .small-box:focus {
     -webkit-box-shadow: 0 0 21px rgba(208, 208, 208, 0.54);
     box-shadow: 0 0 21px rgba(208, 208, 208, 0.54);
@@ -5908,11 +5908,8 @@ button.close {
     .small-box .text li a img {
       float: right; }
 
-.section-page {
-  margin-top: 140px; }
-
 .section-footer {
-  color: #ffffff;
+  color: #fff;
   min-height: 150px;
   padding: 30px 0;
   background-color: #646464; }
@@ -5947,6 +5944,7 @@ img.footer-logo {
     font-size: 21px; }
 
 .section-page {
+  margin-top: 140px;
   margin-bottom: 40px; }
   .section-page h3 {
     margin: 0; }
@@ -5961,12 +5959,6 @@ img.footer-logo {
   color: white; }
 
 #dataset-search {
-  float: right;
-  background-image: none;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   margin-bottom: 10px; }
 
 .sidebar {
@@ -5981,10 +5973,8 @@ img.footer-logo {
   font-size: 23px;
   font-weight: bold;
   margin: 0;
-  font-size: 23px;
   font-weight: bold;
-  margin: 0;
-  border-bottom: solid red 2px;
+  border-bottom: solid #ff0000 2px;
   padding-bottom: 4px;
   width: 70%; }
 .sidebar-widget ul, .sidebar-widget ol {
@@ -5994,7 +5984,7 @@ img.footer-logo {
   padding: 10px 0;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.1); }
 .sidebar-widget ul > li:last-child, .sidebar-widget ol > li:last-child {
-  border-bottom: none; }
+  border-bottom: 0; }
 .sidebar-widget ul a, .sidebar-widget ol a {
   color: #333333;
   text-decoration: none;
@@ -6019,23 +6009,39 @@ table th {
 
 .btn-download {
   background-color: #df3332;
-  border: 2px solid #ffffff;
-  color: #ffffff;
+  border: 2px solid #fff;
+  color: #fff;
   transition-duration: .25s;
   transition-property: all;
   -webkit-transition-property: all;
   -moz-transition-property: all;
   -ms-transition-property: all;
   -o-transition-property: all;
-  transition-property: all;
   -webkit-transition-duration: .25s;
   -moz-transition-duration: .25s;
   -ms-transition-duration: .25s;
   -o-transition-duration: .25s; }
 
 .btn-download:focus, .btn-download:hover {
-  border: 2px solid #000000;
+  border: 2px solid #000;
   background-color: transparent; }
+
+.form-label {
+  background: #0071bc;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  border-top-right-radius: 8px; }
+
+.filter-form {
+  background: #0071bc;
+  padding: 15px 0 10px 20px;
+  margin-bottom: 4px; }
+
+.data-filter select.form-control, .data-filter .btn {
+  margin-right: 10px;
+  margin-bottom: 10px; }
 
 /**
 mobile friendly css fixes
@@ -6055,6 +6061,11 @@ mobile friendly css fixes
     padding: 10px 0 0 10px; }
 
   .sidebar-widget .widget-title {
-    width: 100%; } }
+    width: 100%; }
+
+  #dataset-search {
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    margin-top: 0; } }
 
 /*# sourceMappingURL=style.css.map */

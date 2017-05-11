@@ -226,12 +226,6 @@ color: white;
 
 }
 #dataset-search{
-  float: right;
-  background-image: none;
-border: 1px solid #ccc;
-border-radius: 4px;
--webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-box-shadow:  inset 0 1px 1px rgba(0, 0, 0, .075);
   margin-bottom: 10px;
 }
 
@@ -321,6 +315,28 @@ table th {
 .btn-download:focus, .btn-download:hover {
   border: 2px solid #000;
   background-color: rgba(0, 0, 0, 0);
+}
+.form-label{
+background: #0071bc;
+padding: 5px;
+font-size: 17px;
+  font-weight: 600;
+color: #fff;
+border-top-right-radius: 8px;
+}
+
+.filter-form{
+  background:#0071bc;
+  padding: 15px 0 10px 20px ;
+  margin-bottom: 4px;
+
+}
+.data-filter{
+  select.form-control,.btn{
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
 }
 
 @import "responsive";

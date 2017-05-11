@@ -1,6 +1,6 @@
 from __future__ import unicode_literals
 from landing.views import dataset_preview
-
+from landing.views import data_filter
 from django.conf.urls import include, url
 from django.conf.urls.i18n import i18n_patterns
 from django.contrib import admin
@@ -21,6 +21,8 @@ urlpatterns = i18n_patterns(
     # admin interface, which would be marginally more secure.
     url("^admin/", include(admin.site.urls)),
     url(r'^data-preview/(?P<id>\d+)/$', dataset_preview, name='dataset_table'),
+    url(r'^dataset/data_filter/', data_filter, name='data_filter'),
+
 )
 
 if settings.USE_MODELTRANSLATION:
